@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%
+}
+
+.header{
+    font-size: 20px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top:15px ;
+}
+
+.vata,.pitta,.kapha{
+    background-color: bisque;
+}
+
+.list_cards{
+    list-style: none;
+    padding-top: 2px;
+}
+
+.list_headers{
+    margin:3px;
+}
+
+.foods{
+    display: flex;
+    justify-content: space-around;
+    margin:5px
+}
+
+.consume,.notconsume{
+    background-color: bisque;
+    border: 2px solid black;
+}
+
+.li_consume,.li_notconsume{
+    list-style: none;
+
+}
+
+.yoga{
+    display: flex;
+    justify-content: space-around;
+    background-color: beige;
+    margin-top: 10px;
+}
+.asnas{
+    padding:20px;
+    background-color: pink;
+}
+
+.asnas img{
+    margin:30px;
+}
+
