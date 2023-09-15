@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 2.3vh;    
+    font-size: 2.6vh;    
 }
 .top{
     width: 100%;
-    height: 11vh;
-    border: 1px solid black;
+    height: 10vh;
+    border: 1px solid rgb(200, 200, 200);
     padding: 0 2%;
     display: flex;
     justify-content: space-between;
@@ -30,10 +30,7 @@
     background-size: contain;
 }
 
-.mainscreen{
-    width:100%;
-    height: 89vh;
-}
+
 .navigation{
     display: flex;
     height: 90%;
@@ -73,4 +70,9 @@
 }
 .navigation a:active{
     background-color: rgb(241, 241, 241);
+}
+.mainscreen{
+    width:100%;
+    height: 90vh;
+    overflow: auto;
 }
