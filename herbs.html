@@ -1,159 +1,321 @@
-<html >
+<html>
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <script src="https://kit.fontawesome.com/c33097aea5.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="herbs.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <script src="https://kit.fontawesome.com/c33097aea5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="herbs.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    
-    
+
+
 </head>
+
 <body>
-
+  <div class="search_in">
     <div class="top">
-        <div class="name_logo">
-            <div class="logo"></div>
-            
-        </div>
-        <div class="navigation">
-            <a href="homepage.html">Home</a>
-            <a href="remedies.html">Remedies</a>
-            <a href="herbs.html">Herbs</a>
-            <a href="healthy_practices.html">Healthy Practices</a>
-            <a href="about.html">About</a>
-        </div>
+      <div class="name_logo">
+        <div class="logo"></div>
+  
+      </div>
+      <div class="navigation">
+        <a href="homepage.html">Home</a>
+        <a href="remedies.html">Remedies</a>
+        <a href="herbs.html">Herbs</a>
+        <a href="healthy_practices.html">Healthy Practices</a>
+        <a href="about.html">About</a>
+      </div>
     </div>
-    <div class="mainscreen">
-      
-      <div class="background"> 
-     <div class="herbscontent">
-      <h1 id="heading" style="font-size: 120px;">Herb's</h1>
-      <div id="row1">
-        <div id="box1">
-          <h1 id="boxh">Tulsi</h1>
-          <img id="imgh" src="https://nurserylive.com/cdn/shop/products/nurserylive-seeds-krishna-tulsi-tulsi-black-0-5-kg-seeds-112929.png?v=1679750449" alt="tulsi">
-          <p id="parah"></i>Tulsi is perhaps one of the best examples of Ayurveda's holistic lifestyle approach to health. Tulsi tastes hot and bitter and is said to penetrate the deep tissues, dry tissue secretions and normalize kapha and vata. Daily consumption of tulsi is said to prevent disease, promote general health, wellbeing and longevity and assist in dealing with the stresses of daily life.</p>
-          <h1 id="h2">Remedial Uses:</h1>
-          <p id="parah2"><i class="fa-solid fa-arrow-right"></i>A decoction of tulsi leaves, honey, and ginger is a beneficial remedy for bronchitis, asthma, influenza, cough, and cold. <br><i class="fa-solid fa-arrow-right"></i> Water boiled with tulsi leaves can be used in case of a sore throat. <br><i class="fa-solid fa-arrow-right"></i> The herb improves resistance to stress and has a normalizing influence on blood pressure as well as blood sugar imbalances.</p>
-        </div>
-        <div id="box1"><h1 id="boxh">Ashwagandha</h1>
-          <img id="imgh" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Ashwagandha.jpg/1200px-Ashwagandha.jpg" alt="">
-          <p id="parah">Withania somnifera, known commonly as ashwagandha or winter cherry, is an evergreen shrub in the Solanaceae or nightshade family that grows in India, the Middle East, and parts of Africa. Several other species in the genus Withania are morphologically similar. </p>
-          <h1 id="h2">Remedial Uses:</h1>
-          <p id="parah2"><i class="fa-solid fa-arrow-right"></i>Reduced blood sugar levels <br><i class="fa-solid fa-arrow-right"></i> Inflammation, mood, memory, stress, and anxiety relief <br><i class="fa-solid fa-arrow-right"></i> Increased muscle strength and fertility</p>
-        </div>
-        <div id="box1"><h1 id="boxh">Amla</h1>
-          <img id="imgh" src="https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTsNgUPMML-Z5pRDI6W6yiTFoE8PPDiU85oqqGErTSLk36VKjEtnFJ2b3iS6ci97vDb" alt="Amla">
-          <p id="parah">Phyllanthus emblica, also known as emblic, emblic myrobalan, myrobalan, Indian gooseberry, Malacca tree, or amla, from the Sanskrit आमलकी, is a deciduous tree of the family Phyllanthaceae. Its native range is tropical and southern Asia. </p>
-          <h1 id="h2">Remedial Uses:</h1>
-          <p id="parah2"><i class="fa-solid fa-arrow-right"></i>Amla possesses anti-diabetic, hypolipedemic, anti-microbial, anti-inflammatory, antioxidant, hepatoprotective and anti-emetic activities. <br><i class="fa-solid fa-arrow-right"></i> The drug is used as single and as ingredient in various compound formulations like Chyavanaprasa, Dhatriloha, Amalaki Rasayana, Dhatryarishta etc.<br></p>
-        </div>
+    <div class="srch_cont">
+      <div class="search">
+        <input id="herbs-inp" type="text" placeholder="Search Herbs...">
+        <button class="serach_btn" onclick="herb_search()"><i class="fa-solid fa-magnifying-glass"></i></button>
       </div>
-      <div id="row1">
-        <div id="box2">
-          <h1 id="boxh">Turmeric</h1>
-          <img id="imgh" src="https://www.google.com/url?sa=i&url=http%3A%2F%2Ft1.gstatic.com%2Flicensed-image%3Fq%3Dtbn%3AANd9GcRiy_YqtI4_mZOpGLsovc_0wNJxiKTp-g4dMddLsUcT9GbCF_rjXCAB4M_g6jIeTt6d&psig=AOvVaw0FG5RizZAuOEHy0CBS1AvF&ust=1694861629995000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCMCOj_zUrIEDFQAAAAAdAAAAABAL" alt="tulsi">
-          <p id="parah"></i>Turmeric or Curcuma longa, is a flowering plant in the ginger family Zingiberaceae. It is a perennial, rhizomatous, herbaceous plant native to the Indian subcontinent and Southeast Asia that requires temperatures between 20 and 30 °C and high annual rainfall to thrive.</p>
-          <h1 id="h2">Remedial Uses:</h1>
-          <p id="parah2"><i class="fa-solid fa-arrow-right"></i>Turmeric is used as an herbal medicine for rheumatoid arthritis, chronic anterior uveitis, conjunctivitis, skin cancer, small pox, chicken pox, wound healing. <br><i class="fa-solid fa-arrow-right"></i> Today, turmeric is promoted as a dietary supplement for a variety of conditions, including arthritis, digestive disorders, respiratory infections, allergies, liver disease, depression<br></p>
-         
-        </div>
-        <div id="box2"><h1 id="boxh">Shatavari
-        </h1>
-          <img id="imgh" src="https://lh5.ggpht.com/-noY1BI5duqgrWJ0xO6O7BeUJgGJCWLoMUMXWm3HEJ54KrkpDQ1UeQAbx26C9xZZ6aORmB0e6c_Fq3z28v0r=s580" alt="shevanti"><p id="parah">Asparagus racemosus is a species of asparagus native from Africa through southern Asia, including the Indian subcontinent, to northern Australia. It grows 1–2 m tall and prefers to take root in gravelly, rocky soils high up in piedmont plains, at 1,300–1,400 m elevation. It was botanically described in 1799.</p>
-          <h1 id="h2">Remedial Uses:</h1>
-          <p id="parah2"><i class="fa-solid fa-arrow-right"></i> Shatavari powder can be taken along with milk or honey twice a day to get relief from the symptoms of premenstrual syndrome. <br><i class="fa-solid fa-arrow-right"></i>  Shatavari boosts immunity due to its Rasayana (rejuvenating) property and helps in weight gain due to its Balya property.<br></p>
-        
-        </div>
+    </div>
+  </div>
+  
+  <div class="mainscreen">
 
-          
-          
-        <div id="box2"><h1 id="boxh">Cumin</h1>
-          <img id="imgh" src="https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRmeG5LIJ-aklzhz4fx4DosFq4J8e67Dx4OAmG-aDBQeV479hYwrl7mO90gk7KciIvo" alt="">
-          <p id="parah">Cumin is a flowering plant in the family Apiaceae, native to the Irano-Turanian Region. Its seeds – each one contained within a fruit, which is dried – are used in the cuisines of many cultures in both whole and ground form.</p>
+    <div class="background">
+      <div class="herbscontent">
+        <h1 id="heading" style="font-size: 80px;">Herb's</h1>
+        <div id="row1">
+          <div id="box1" class="box1">
+            <h1 id="boxh">Tulsi</h1>
+            <img id="imgh"
+              src="https://nurserylive.com/cdn/shop/products/nurserylive-seeds-krishna-tulsi-tulsi-black-0-5-kg-seeds-112929.png?v=1679750449"
+              alt="tulsi">
+            <p id="parah"></i>Tulsi is perhaps one of the best examples of Ayurveda's holistic lifestyle approach to
+              health. Tulsi tastes hot and bitter and is said to penetrate the deep tissues, dry tissue secretions and
+              normalize kapha and vata. Daily consumption of tulsi is said to prevent disease, promote general health,
+              wellbeing and longevity and assist in dealing with the stresses of daily life.</p>
+            <h1 id="h2">Remedial Uses:</h1>
+            <p id="parah2"><i class="fa-solid fa-arrow-right"></i>A decoction of tulsi leaves, honey, and ginger is a
+              beneficial remedy for bronchitis, asthma, influenza, cough, and cold. <br><i
+                class="fa-solid fa-arrow-right"></i> Water boiled with tulsi leaves can be used in case of a sore
+              throat. <br><i class="fa-solid fa-arrow-right"></i> The herb improves resistance to stress and has a
+              normalizing influence on blood pressure as well as blood sugar imbalances.</p>
+          </div>
+          <div id="box2" class="box1">
+            <h1 id="boxh">Ashwagandha</h1>
+            <img id="imgh"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Ashwagandha.jpg/1200px-Ashwagandha.jpg"
+              alt="">
+            <p id="parah">Withania somnifera, known commonly as ashwagandha or winter cherry, is an evergreen shrub in
+              the Solanaceae or nightshade family that grows in India, the Middle East, and parts of Africa. Several
+              other species in the genus Withania are morphologically similar. </p>
+            <h1 id="h2">Remedial Uses:</h1>
+            <p id="parah2"><i class="fa-solid fa-arrow-right"></i>Reduced blood sugar levels <br><i
+                class="fa-solid fa-arrow-right"></i> Inflammation, mood, memory, stress, and anxiety relief <br><i
+                class="fa-solid fa-arrow-right"></i> Increased muscle strength and fertility</p>
+          </div>
+          <div id="box3" class="box1">
+            <h1 id="boxh">Amla</h1>
+            <img id="imgh"
+              src="https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTsNgUPMML-Z5pRDI6W6yiTFoE8PPDiU85oqqGErTSLk36VKjEtnFJ2b3iS6ci97vDb"
+              alt="Amla">
+            <p id="parah">Phyllanthus emblica, also known as emblic, emblic myrobalan, myrobalan, Indian gooseberry,
+              Malacca tree, or amla, from the Sanskrit आमलकी, is a deciduous tree of the family Phyllanthaceae. Its
+              native range is tropical and southern Asia. </p>
+            <h1 id="h2">Remedial Uses:</h1>
+            <p id="parah2"><i class="fa-solid fa-arrow-right"></i>Amla possesses anti-diabetic, hypolipedemic,
+              anti-microbial, anti-inflammatory, antioxidant, hepatoprotective and anti-emetic activities. <br><i
+                class="fa-solid fa-arrow-right"></i> The drug is used as single and as ingredient in various compound
+              formulations like Chyavanaprasa, Dhatriloha, Amalaki Rasayana, Dhatryarishta etc.<br></p>
+          </div>
+        </div>
+        <div id="row1">
+          <div id="box4" class="box2">
+            <h1 id="boxh">Turmeric</h1>
+            <img id="imgh"
+              src="https://www.google.com/url?sa=i&url=http%3A%2F%2Ft1.gstatic.com%2Flicensed-image%3Fq%3Dtbn%3AANd9GcRiy_YqtI4_mZOpGLsovc_0wNJxiKTp-g4dMddLsUcT9GbCF_rjXCAB4M_g6jIeTt6d&psig=AOvVaw0FG5RizZAuOEHy0CBS1AvF&ust=1694861629995000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCMCOj_zUrIEDFQAAAAAdAAAAABAL"
+              alt="tulsi">
+            <p id="parah"></i>Turmeric or Curcuma longa, is a flowering plant in the ginger family Zingiberaceae. It is
+              a perennial, rhizomatous, herbaceous plant native to the Indian subcontinent and Southeast Asia that
+              requires temperatures between 20 and 30 °C and high annual rainfall to thrive.</p>
+            <h1 id="h2">Remedial Uses:</h1>
+            <p id="parah2"><i class="fa-solid fa-arrow-right"></i>Turmeric is used as an herbal medicine for rheumatoid
+              arthritis, chronic anterior uveitis, conjunctivitis, skin cancer, small pox, chicken pox, wound healing.
+              <br><i class="fa-solid fa-arrow-right"></i> Today, turmeric is promoted as a dietary supplement for a
+              variety of conditions, including arthritis, digestive disorders, respiratory infections, allergies, liver
+              disease, depression<br></p>
 
-          <h1 id="h2">Remedial Uses:</h1>
-          <p id="parah2"><i class="fa-solid fa-arrow-right"></i> Cumin contains compounds called flavonoids that work as antioxidants in the body. <br><i class="fa-solid fa-arrow-right"></i>  Cumin contains compounds called flavonoids that work as antioxidants in the body.<br><i class="fa-solid fa-arrow-right"></i>By neutralizing these particles, antioxidants can help prevent diseases like cancer, heart disease, and high blood pressure.<br></p>
-          
+          </div>
+          <div id="box5" class="box2">
+            <h1 id="boxh">Shatavari
+            </h1>
+            <img id="imgh"
+              src="https://lh5.ggpht.com/-noY1BI5duqgrWJ0xO6O7BeUJgGJCWLoMUMXWm3HEJ54KrkpDQ1UeQAbx26C9xZZ6aORmB0e6c_Fq3z28v0r=s580"
+              alt="shevanti">
+            <p id="parah">Asparagus racemosus is a species of asparagus native from Africa through southern Asia,
+              including the Indian subcontinent, to northern Australia. It grows 1–2 m tall and prefers to take root in
+              gravelly, rocky soils high up in piedmont plains, at 1,300–1,400 m elevation. It was botanically described
+              in 1799.</p>
+            <h1 id="h2">Remedial Uses:</h1>
+            <p id="parah2"><i class="fa-solid fa-arrow-right"></i> Shatavari powder can be taken along with milk or
+              honey twice a day to get relief from the symptoms of premenstrual syndrome. <br><i
+                class="fa-solid fa-arrow-right"></i> Shatavari boosts immunity due to its Rasayana (rejuvenating)
+              property and helps in weight gain due to its Balya property.<br></p>
+
+          </div>
+
+
+
+          <div id="box6" class="box2">
+            <h1 id="boxh">Cumin</h1>
+            <img id="imgh"
+              src="https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRmeG5LIJ-aklzhz4fx4DosFq4J8e67Dx4OAmG-aDBQeV479hYwrl7mO90gk7KciIvo"
+              alt="">
+            <p id="parah">Cumin is a flowering plant in the family Apiaceae, native to the Irano-Turanian Region. Its
+              seeds – each one contained within a fruit, which is dried – are used in the cuisines of many cultures in
+              both whole and ground form.</p>
+
+            <h1 id="h2">Remedial Uses:</h1>
+            <p id="parah2"><i class="fa-solid fa-arrow-right"></i> Cumin contains compounds called flavonoids that work
+              as antioxidants in the body. <br><i class="fa-solid fa-arrow-right"></i> Cumin contains compounds called
+              flavonoids that work as antioxidants in the body.<br><i class="fa-solid fa-arrow-right"></i>By
+              neutralizing these particles, antioxidants can help prevent diseases like cancer, heart disease, and high
+              blood pressure.<br></p>
+
+          </div>
+        </div>
+        <div id="row1">
+          <div id="box7" class="box1">
+            <h1 id="boxh">Myrobalan</h1>
+            <img id="imgh"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Haritaki_%28Terminalia_chebula%29_fruits.jpg/220px-Haritaki_%28Terminalia_chebula%29_fruits.jpg"
+              alt="tulsi">
+            <p id="parah"></i>Terminalia chebula, commonly known as black- or chebulic myrobalan, is a species of
+              Terminalia, native to South Asia from India and Nepal east to southwest China, and south to Sri Lanka,
+              Malaysia, and Vietnam.</p>
+
+            <h1 id="h2">Remedial Uses:</h1>
+            <p id="parah2"><i class="fa-solid fa-arrow-right"></i> Chebulic myrobalan is used as a bowel regulatory
+              tonic and gentle laxative in Traditional Ayurvedic Medicine.<br><i class="fa-solid fa-arrow-right"></i>
+              You can add a few drops of oil to make it thicker and keep it for long. This paste has been used by many
+              to heal cracked feet.<br></p>
+          </div>
+          <div id="box8" class="box1">
+            <h1 id="boxh">Fenugreek</h1>
+            <img id="imgh"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Illustration_Trigonella_foenum-graecum0_clean.jpg/1200px-Illustration_Trigonella_foenum-graecum0_clean.jpg"
+              alt="">
+            <p id="parah">Fenugreek is an annual plant in the family Fabaceae, with leaves consisting of three small
+              obovate to oblong leaflets. It is cultivated worldwide as a semiarid crop. Its seeds and leaves are common
+              ingredients in dishes from the Indian subcontinent, and have been used as a culinary ingredient since
+              ancient times.</p>
+            <h1 id="h2">Remedial Uses:</h1>
+            <p id="parah2"><i class="fa-solid fa-arrow-right"></i> using fenugreek seed powder or supplements may help
+              reduce high cholesterol levels<br><i class="fa-solid fa-arrow-right"></i> Skin health: Fenugreek oil or
+              seed powder can be used topically to improve skin health and reduce inflammatory disease symptoms.<br></p>
+          </div>
+          <div id="box9" class="box1">
+            <h1 id="boxh">Triphala</h1>
+            <img id="imgh"
+              src="https://images-prod.healthline.com/hlcmsresource/images/AN_images/triphala-ayurvedic-fruits-1296x728.jpg"
+              alt="">
+            <p id="parah">Triphala is an Ayurvedic herbal rasayana formula consisting of equal parts of three
+              myrobalans, taken without seed: Amalaki, Bibhitaki, and Haritaki. It contains vitamin C</p>
+            <h1 id="h2">Remedial Uses:</h1>
+            <p id="parah2"><i class="fa-solid fa-arrow-right"></i> capable of balancing and rejuvenating the three
+              doshas that regulate human life: Vata, pitta, and Kapha.<br><i class="fa-solid fa-arrow-right"></i> It is
+              widely used in several disease conditions owing to its following properties: laxative.
+              anti-inflammatory.<br></p>
+          </div>
         </div>
       </div>
       <div id="row1">
-        <div id="box1">
-          <h1 id="boxh">Myrobalan</h1>
-          <img id="imgh" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Haritaki_%28Terminalia_chebula%29_fruits.jpg/220px-Haritaki_%28Terminalia_chebula%29_fruits.jpg" alt="tulsi">
-          <p id="parah"></i>Terminalia chebula, commonly known as black- or chebulic myrobalan, is a species of Terminalia, native to South Asia from India and Nepal east to southwest China, and south to Sri Lanka, Malaysia, and Vietnam.</p>
-
-          <h1 id="h2">Remedial Uses:</h1>
-          <p id="parah2"><i class="fa-solid fa-arrow-right"></i> Chebulic myrobalan is used as a bowel regulatory tonic and gentle laxative in Traditional Ayurvedic Medicine.<br><i class="fa-solid fa-arrow-right"></i>   You can add a few drops of oil to make it thicker and keep it for long. This paste has been used by many to heal cracked feet.<br></p>
-        </div>
-        <div id="box1"><h1 id="boxh">Fenugreek</h1>
-        <img id="imgh" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Illustration_Trigonella_foenum-graecum0_clean.jpg/1200px-Illustration_Trigonella_foenum-graecum0_clean.jpg" alt="">
-        <p id="parah">Fenugreek is an annual plant in the family Fabaceae, with leaves consisting of three small obovate to oblong leaflets. It is cultivated worldwide as a semiarid crop. Its seeds and leaves are common ingredients in dishes from the Indian subcontinent, and have been used as a culinary ingredient since ancient times.</p>
-        <h1 id="h2">Remedial Uses:</h1>
-          <p id="parah2"><i class="fa-solid fa-arrow-right"></i> using fenugreek seed powder or supplements may help reduce high cholesterol levels<br><i class="fa-solid fa-arrow-right"></i> Skin health: Fenugreek oil or seed powder can be used topically to improve skin health and reduce inflammatory disease symptoms.<br></p>
-      </div>
-        <div id="box1"><h1 id="boxh">Triphala</h1>
-        <img id="imgh" src="https://images-prod.healthline.com/hlcmsresource/images/AN_images/triphala-ayurvedic-fruits-1296x728.jpg" alt="">
-        <p id="parah">Triphala is an Ayurvedic herbal rasayana formula consisting of equal parts of three myrobalans, taken without seed: Amalaki, Bibhitaki, and Haritaki. It contains vitamin C</p>
-        <h1 id="h2">Remedial Uses:</h1>
-          <p id="parah2"><i class="fa-solid fa-arrow-right"></i> capable of balancing and rejuvenating the three doshas that regulate human life: Vata, pitta, and Kapha.<br><i class="fa-solid fa-arrow-right"></i>  It is widely used in several disease conditions owing to its following properties: laxative. anti-inflammatory.<br></p>
-      </div>
-      </div>
-      </div>
-      <div id="row1">
-        <div id="box2">
+        <div id="box10" class="box2">
           <h1 id="boxh">Centella asiatica</h1>
-          <img id="imgh" src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Centella_asiatica_%28%E0%A6%A5%E0%A6%BE%E0%A6%A8%E0%A6%95%E0%A7%81%E0%A6%A8%E0%A6%BF%29_%283%29.jpg" alt="tulsi">
-          <p id="parah"></i>Centella asiatica, commonly known as Indian pennywort and Asiatic pennywort, is a herbaceous, perennial plant in the flowering plant family Apiaceae. It is native to tropical regions of Africa, Asia, Australia, and islands in the western Pacific Ocean</p>
+          <img id="imgh"
+            src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Centella_asiatica_%28%E0%A6%A5%E0%A6%BE%E0%A6%A8%E0%A6%95%E0%A7%81%E0%A6%A8%E0%A6%BF%29_%283%29.jpg"
+            alt="tulsi">
+          <p id="parah"></i>Centella asiatica, commonly known as Indian pennywort and Asiatic pennywort, is a
+            herbaceous, perennial plant in the flowering plant family Apiaceae. It is native to tropical regions of
+            Africa, Asia, Australia, and islands in the western Pacific Ocean</p>
 
           <h1 id="h2">Remedial Uses:</h1>
-          <p id="parah2"><i class="fa-solid fa-arrow-right"></i> It is used as a brain tonic and to control nerve disorders.<br><i class="fa-solid fa-arrow-right"></i> The extract can be used for improving the voice and as a toner of heart muscle.<br><i class="fa-solid fa-arrow-right"></i>It is recommended in leprosy, itching, fever, edema, respiratory ailments and anaemia.<br></p>
-          
+          <p id="parah2"><i class="fa-solid fa-arrow-right"></i> It is used as a brain tonic and to control nerve
+            disorders.<br><i class="fa-solid fa-arrow-right"></i> The extract can be used for improving the voice and as
+            a toner of heart muscle.<br><i class="fa-solid fa-arrow-right"></i>It is recommended in leprosy, itching,
+            fever, edema, respiratory ailments and anaemia.<br></p>
+
         </div>
-        <div id="box2"><h1 id="boxh">Garlic</h1>
-        <img id="imgh" src="https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcRpR512TWrhheBzBDl1EEwngFofrco_ZpT7ELqePS4uFAF2KRdQhe1EHof7gseRvoIG" alt="">
-        <p id="parah">Garlic is a species of bulbous flowering plant in the genus Allium. Its close relatives include the onion, shallot, leek, chive, Welsh onion, and Chinese onion.</p>
-        <h1 id="h2">Remedial Uses:</h1>
-          <p id="parah2"><i class="fa-solid fa-arrow-right"></i> applying garlic with butter heals wounds.<br><i class="fa-solid fa-arrow-right"></i> consuming garlic with sugar syrup treats cough and provides effective relief for cough, nasal congestion and sore throat.<br><i class="fa-solid fa-arrow-right"></i>. In addition, boiling 3-4 garlic clove with one glass of water and consuming it thrice a day cures menstrual pain.<br></p>
+        <div id="box11" class="box2">
+          <h1 id="boxh">Garlic</h1>
+          <img id="imgh"
+            src="https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcRpR512TWrhheBzBDl1EEwngFofrco_ZpT7ELqePS4uFAF2KRdQhe1EHof7gseRvoIG"
+            alt="">
+          <p id="parah">Garlic is a species of bulbous flowering plant in the genus Allium. Its close relatives include
+            the onion, shallot, leek, chive, Welsh onion, and Chinese onion.</p>
+          <h1 id="h2">Remedial Uses:</h1>
+          <p id="parah2"><i class="fa-solid fa-arrow-right"></i> applying garlic with butter heals wounds.<br><i
+              class="fa-solid fa-arrow-right"></i> consuming garlic with sugar syrup treats cough and provides effective
+            relief for cough, nasal congestion and sore throat.<br><i class="fa-solid fa-arrow-right"></i>. In addition,
+            boiling 3-4 garlic clove with one glass of water and consuming it thrice a day cures menstrual pain.<br></p>
 
-      </div>
-        
-        <div id="box2"><h1 id="boxh">Aloe Vera</h1>
-        <img id="imgh" src="https://5.imimg.com/data5/NP/GJ/XY/SELLER-15011588/natural-aloe-vera-leaf.jpg" alt=""> <p id="parah">Aloe vera is a succulent plant species of the genus Aloe. It is widely distributed, and is considered an invasive species in many world regions. An evergreen perennial, it originates from the Arabian Peninsula, but grows wild in tropical, semi-tropical, and arid climates around the world.</p> 
-        
-        <h1 id="h2">Remedial Uses:</h1><p id="parah2"><i class="fa-solid fa-arrow-right"></i>Aloe Vera is a boon for our digestive system. It helps in cleaning our digestive system<br><i class="fa-solid fa-arrow-right"></i> helps in the movement of bowels, preventing constipation. Anti-inflammatory properties of aloe vera help in the treatment of Irritable Bowel Syndrome (IBS).<br><i class="fa-solid fa-arrow-right"></i>Traditionally used to treat skin injuries (burns, cuts, insect bites, and eczemas).<br></p>
+        </div>
 
-      </div>
-       
-          
-        
+        <div id="box12" class="box2">
+          <h1 id="boxh">Aloe Vera</h1>
+          <img id="imgh" src="https://5.imimg.com/data5/NP/GJ/XY/SELLER-15011588/natural-aloe-vera-leaf.jpg" alt="">
+          <p id="parah">Aloe vera is a succulent plant species of the genus Aloe. It is widely distributed, and is
+            considered an invasive species in many world regions. An evergreen perennial, it originates from the Arabian
+            Peninsula, but grows wild in tropical, semi-tropical, and arid climates around the world.</p>
+
+          <h1 id="h2">Remedial Uses:</h1>
+          <p id="parah2"><i class="fa-solid fa-arrow-right"></i>Aloe Vera is a boon for our digestive system. It helps
+            in cleaning our digestive system<br><i class="fa-solid fa-arrow-right"></i> helps in the movement of bowels,
+            preventing constipation. Anti-inflammatory properties of aloe vera help in the treatment of Irritable Bowel
+            Syndrome (IBS).<br><i class="fa-solid fa-arrow-right"></i>Traditionally used to treat skin injuries (burns,
+            cuts, insect bites, and eczemas).<br></p>
+
+        </div>
+
+
+
       </div>
       <div id="row1">
-        <div id="box1">
+        <div id="box13" class="box1">
           <h1 id="boxh">Bitter Melon</h1>
-          <img id="imgh" src="https://post.healthline.com/wp-content/uploads/2020/09/4910-bitter_melon-732x549-thumbnail-732x549.jpg" alt="tulsi"></i>
-          <p id="parah">Momordica charantia is a tropical and subtropical vine of the family Cucurbitaceae, widely grown in Asia, Africa, and the Caribbean for its edible fruit. Its many varieties differ substantially in the shape and bitterness of the fruit.</p>
+          <img id="imgh"
+            src="https://post.healthline.com/wp-content/uploads/2020/09/4910-bitter_melon-732x549-thumbnail-732x549.jpg"
+            alt="tulsi"></i>
+          <p id="parah">Momordica charantia is a tropical and subtropical vine of the family Cucurbitaceae, widely grown
+            in Asia, Africa, and the Caribbean for its edible fruit. Its many varieties differ substantially in the
+            shape and bitterness of the fruit.</p>
 
-          <h1 id="h2">Remedial Uses:</h1><p id="parah2"><i class="fa-solid fa-arrow-right"></i>Bitter melon is traditionally known for its medicinal properties such as antidiabetic, anticancer, anti-inflammation, antivirus, and cholesterol lowering effects.<br><i class="fa-solid fa-arrow-right"></i>It contains many phenolic compounds that may have the potential as antioxidant and antimutagen<br></p>
+          <h1 id="h2">Remedial Uses:</h1>
+          <p id="parah2"><i class="fa-solid fa-arrow-right"></i>Bitter melon is traditionally known for its medicinal
+            properties such as antidiabetic, anticancer, anti-inflammation, antivirus, and cholesterol lowering
+            effects.<br><i class="fa-solid fa-arrow-right"></i>It contains many phenolic compounds that may have the
+            potential as antioxidant and antimutagen<br></p>
         </div>
-        <div id="box1"><h1 id="boxh">Neem</h1>
-        <img id="imgh" src="https://static.toiimg.com/thumb/65259168.cms?resizemode=4&width=1200" alt="">
-        <p id="parah">Azadirachta indica, commonly known as margosa, neem, nimtree or Indian lilac, is a tree in the mahogany family Meliaceae. It is one of two species in the genus Azadirachta. </p>
-      
-        <h1 id="h2">Remedial Uses:</h1><p id="parah2"><i class="fa-solid fa-arrow-right"></i>the Neem tree's derivatives were used topically to address such ailments as fevers, respiratory issues, tetanus infections, rheumatism, arthritis, jaundice, malaria, ringworm, lice, fungal and bacterial infections of the skin<br><i class="fa-solid fa-arrow-right"></i>Neem leaf is used for leprosy, eye disorders, bloody nose, intestinal worms, stomach upset, loss of appetite<br></p>
-      </div>
-        
-        <div id="box1"><h1 id="boxh">Waterhyssop</h1>
-        <img id="imgh" src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQJpJA8-tYdrOgzfSlr3zbWZePu2l3p-d5ZR7b4SasA6YmGlY2gi2kYv-Z-6I1CuO9GLubomT3zQ1unn8Y" alt=""><p id="parah">Bacopa monnieri is a perennial, creeping herb native to the wetlands of southern and Eastern India, Australia, Europe, Africa, Asia, and North and South America. It is known by the common names water hyssop, waterhyssop, brahmi, thyme-leafed gratiola, herb of grace, and Indian pennywort</p><h1 id="h2">Remedial Uses:</h1><p id="parah2"><i class="fa-solid fa-arrow-right"></i>Consuming Water Hyssop regularly helps with attention span and concentration.<br><i class="fa-solid fa-arrow-right"></i>Water Hyssop also contains bacoside, a natural compound that improves brain health, helps in the transmission of messages from the brain to the other parts of the body. Additionally, it aids in reducing anxiety.<br></p>
+        <div id="box14" class="box1">
+          <h1 id="boxh">Neem</h1>
+          <img id="imgh" src="https://static.toiimg.com/thumb/65259168.cms?resizemode=4&width=1200" alt="">
+          <p id="parah">Azadirachta indica, commonly known as margosa, neem, nimtree or Indian lilac, is a tree in the
+            mahogany family Meliaceae. It is one of two species in the genus Azadirachta. </p>
+
+          <h1 id="h2">Remedial Uses:</h1>
+          <p id="parah2"><i class="fa-solid fa-arrow-right"></i>the Neem tree's derivatives were used topically to
+            address such ailments as fevers, respiratory issues, tetanus infections, rheumatism, arthritis, jaundice,
+            malaria, ringworm, lice, fungal and bacterial infections of the skin<br><i
+              class="fa-solid fa-arrow-right"></i>Neem leaf is used for leprosy, eye disorders, bloody nose, intestinal
+            worms, stomach upset, loss of appetite<br></p>
+        </div>
+
+        <div id="box15" class="box1">
+          <h1 id="boxh">Waterhyssop</h1>
+          <img id="imgh"
+            src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQJpJA8-tYdrOgzfSlr3zbWZePu2l3p-d5ZR7b4SasA6YmGlY2gi2kYv-Z-6I1CuO9GLubomT3zQ1unn8Y"
+            alt="">
+          <p id="parah">Bacopa monnieri is a perennial, creeping herb native to the wetlands of southern and Eastern
+            India, Australia, Europe, Africa, Asia, and North and South America. It is known by the common names water
+            hyssop, waterhyssop, brahmi, thyme-leafed gratiola, herb of grace, and Indian pennywort</p>
+          <h1 id="h2">Remedial Uses:</h1>
+          <p id="parah2"><i class="fa-solid fa-arrow-right"></i>Consuming Water Hyssop regularly helps with attention
+            span and concentration.<br><i class="fa-solid fa-arrow-right"></i>Water Hyssop also contains bacoside, a
+            natural compound that improves brain health, helps in the transmission of messages from the brain to the
+            other parts of the body. Additionally, it aids in reducing anxiety.<br></p>
+        </div>
+
+
       </div>
 
-        
-      </div>
-      
     </div>
-    
-    <script src="functional.js"></script>
+
+    <script>
+      var srch = document.getElementById('herbs-inp');
+      var block = document.getElementById('block');
+      var arr = ['tulsi', 'ashwagandha', 'amla', 'turmeric', 'shatavari', 'cumin', 'myrobalan', 'fenugreek', 'triphala', 'centella asiatica', 'garlic', 'aloe Vera', 'bitter melon', 'neem', 'waterhyssop'];
+      function herb_search() {
+        for (var x in arr) {
+          var y = Number(x) + 1
+          var id = 'box' + y;
+          console.log(id);
+          var box = document.getElementById(id);
+          console.log(box);
+          if (arr[x] == srch.value.toLowerCase()) {
+            console.log('success');
+            box.style.display = 'block';
+          }
+          else if (srch.value == '' || srch.value == null) {
+            box.style.display = 'block';
+          }
+          else {
+            box.style.display = 'none';
+          }
+        }
+      }
+      srch.addEventListener('keydown', (e) => {
+        if (e.key == 'Enter') {
+          herb_search();
+        }
+      })
+
+    </script>
 </body>
+
 </html>

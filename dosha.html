@@ -1,0 +1,457 @@
+<html >
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dosha</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="dosha.css">
+</head>
+<body>
+    <div class="top">
+        <div class="name_logo">
+            <div class="logo"></div>
+            
+        </div>
+        <div class="navigation">
+            <a class="nav-link" id="nav-link1" href="homepage.html">Home</a>
+            <a class="nav-link" id="nav-link2" href="remedies.html">Remedies</a>
+            <a class="nav-link" id="nav-link3" href="herbs.html">Herbs</a>
+            <a class="nav-link" id="nav-link4" href="">Healthy Practices</a>
+            <a class="nav-link" id="nav-link5" href="about.html">About</a>
+        </div>
+    </div>
+    <div class="mainscreen">
+        <div class="content">
+            <div class="doshabg">
+                <div class="take">
+                    <p>Whats your Dosha?</p>
+                    <p>Take the Quiz</p>
+                </div>
+            </div>
+            <div class="questions">
+                <div class="info">
+                    <p>
+                        The ancient health science of Ayurveda is built around the five elements of ether,
+                 air, fire, water, and earth. The unique combination of these elements come together 
+                 to make up the doshas, or constitutions—vata, pitta, and kapha. Each dosha has a number
+                  of corresponding qualities that are expressed in the physical, emotional, and mental 
+                  aspects of one’s being. All of us have some aspects of each dosha, but one or two 
+                  doshas tend to dominate, informing everything from our digestion to our emotions
+                    </p>
+                    <p>
+                        Take this quiz to discover your dosha, and then explore how it affects your everyday life!
+                    </p>
+                </div>
+                <form action="" id="doshaquiz" method="post" name="doshaquiz">
+                    <div class="row">
+                    <div class="col-xs-12 col-md-6 b20"><strong>1. Which of these best describes your physical frame?</strong><br />
+                    <label><input form="doshaquiz" id="vata1" name="question1" onclick="getTotal()" type="radio" value="1" /> Small</label><br />
+                    <label><input form="doshaquiz" id="pitta1" name="question1" onclick="getTotal()" type="radio" value="1" /> Medium</label><br />
+                    <label><input form="doshaquiz" id="kapha1" name="question1" onclick="getTotal()" type="radio" value="1" /> Large</label></div>
+                    
+                    <div class="col-xs-12 col-md-6 b20">&nbsp;</div>
+                    
+                    <div class="col-xs-12 col-md-6 b20"><strong>2. Which best describes your skin?</strong><br />
+                    <label><input form="doshaquiz" id="pitta2" name="question2" onclick="getTotal()" type="radio" value="1" /> Oily and soft with freckles or pimples</label><br />
+                    <label><input form="doshaquiz" id="kapha2" name="question2" onclick="getTotal()" type="radio" value="1" /> Thick, oily, cool skin</label><br />
+                    <label><input form="doshaquiz" id="vata2" name="question2" onclick="getTotal()" type="radio" value="1" /> Dry</label></div>
+                    
+                    <div class="col-xs-12 col-md-6 b20">&nbsp;</div>
+                    </div>
+                    
+                    <div class="row">
+                    <div class="col-xs-12 col-md-6 b20"><strong>3. Which best describes your hair?</strong><br />
+                    <label><input form="doshaquiz" id="pitta3" name="question3" onclick="getTotal()" type="radio" value="1" /> Straight and fine</label><br />
+                    <label><input form="doshaquiz" id="kapha3" name="question3" onclick="getTotal()" type="radio" value="1" /> Thick and lustrous</label><br />
+                    <label><input form="doshaquiz" id="vata3" name="question3" onclick="getTotal()" type="radio" value="1" /> Dry and curly</label></div>
+                    
+                    <div class="col-xs-12 col-md-6 b20">&nbsp;</div>
+                    
+                    <div class="col-xs-12 col-md-6 b20"><strong>4. Which best describes your eyes?</strong><br />
+                    <label><input form="doshaquiz" id="kapha4" name="question4" onclick="getTotal()" type="radio" value="1" /> Large, pretty</label><br />
+                    <label><input form="doshaquiz" id="vata4" name="question4" onclick="getTotal()" type="radio" value="1" /> Small and dry</label><br />
+                    <label><input form="doshaquiz" id="pitta4" name="question4" onclick="getTotal()" type="radio" value="1" /> Medium-sized; intense gaze</label></div>
+                    
+                    <div class="col-xs-12 col-md-6 b20">&nbsp;</div>
+                    </div>
+                    
+                    <div class="row">
+                    <div class="col-xs-12 col-md-6 b20"><strong>5. Which best describes how you talk?</strong><br />
+                    <label><input form="doshaquiz" id="vata5" name="question5" onclick="getTotal()" type="radio" value="1" /> Fast and/or a lot!</label><br />
+                    <label><input form="doshaquiz" id="pitta5" name="question5" onclick="getTotal()" type="radio" value="1" /> My words are sharp and concise.</label><br />
+                    <label><input form="doshaquiz" id="kapha5" name="question5" onclick="getTotal()" type="radio" value="1" /> My speech is slow and calm.</label></div>
+                    
+                    <div class="col-xs-12 col-md-6 b20">&nbsp;</div>
+                    
+                    <div class="col-xs-12 col-md-6 b20"><strong>6. What type of weather is your favorite?</strong><br />
+                    <label><input form="doshaquiz" id="vata6" name="question6" onclick="getTotal()" type="radio" value="1" /> Warm</label><br />
+                    <label><input form="doshaquiz" id="kapha6" name="question6" onclick="getTotal()" type="radio" value="1" /> Cool</label><br />
+                    <label><input form="doshaquiz" id="pitta6" name="question6" onclick="getTotal()" type="radio" value="1" /> Cool and dry</label></div>
+                    
+                    <div class="col-xs-12 col-md-6 b20">&nbsp;</div>
+                    </div>
+                    
+                    <div class="row">
+                    <div class="col-xs-12 col-md-6 b20"><strong>7. How is your memory?</strong><br />
+                    <label><input form="doshaquiz" id="vata7" name="question7" onclick="getTotal()" type="radio" value="1" /> I learn quickly, but I also forget quickly.</label><br />
+                    <label><input form="doshaquiz" id="pitta7" name="question7" onclick="getTotal()" type="radio" value="1" /> I have a great memory!</label><br />
+                    <label><input form="doshaquiz" id="kapha7" name="question7" onclick="getTotal()" type="radio" value="1" /> It takes me a while to commit something to memory, but once I do I don’t forget it.</label></div>
+                    
+                    <div class="col-xs-12 col-md-6 b20">&nbsp;</div>
+                    
+                    <div class="col-xs-12 col-md-6 b20"><strong>8. Which best describes your personality?</strong><br />
+                    <label><input form="doshaquiz" id="kapha8" name="question8" onclick="getTotal()" type="radio" value="1" /> Responsible, nurturing, and sensitive</label><br />
+                    <label><input form="doshaquiz" id="vata8" name="question8" onclick="getTotal()" type="radio" value="1" /> Creative, joyful, and introspective</label><br />
+                    <label><input form="doshaquiz" id="pitta8" name="question8" onclick="getTotal()" type="radio" value="1" /> Competitive, perceptive, and efficient</label></div>
+                    
+                    <div class="col-xs-12 col-md-6 b20">&nbsp;</div>
+                    </div>
+                    
+                    <div class="row">
+                    <div class="col-xs-12 col-md-6 b20"><strong>9. Which of these traits do you most identify with?</strong><br />
+                    <label><input form="doshaquiz" id="kapha9" name="question9" onclick="getTotal()" type="radio" value="1" /> I can be pretty stubborn.</label><br />
+                    <label><input form="doshaquiz" id="pitta9" name="question9" onclick="getTotal()" type="radio" value="1" /> I get jealous easily.</label><br />
+                    <label><input form="doshaquiz" id="vata9" name="question9" onclick="getTotal()" type="radio" value="1" /> I’m often indecisive.</label></div>
+                    
+                    <div class="col-xs-12 col-md-6 b20">&nbsp;</div>
+                    
+                    <div class="col-xs-12 col-md-6 b20"><strong>10. How about these traits? Which sounds the <em>most</em> like you?</strong><br />
+                    <label><input form="doshaquiz" id="vata10" name="question10" onclick="getTotal()" type="radio" value="1" /> I’m very intuitive.</label><br />
+                    <label><input form="doshaquiz" id="pitta10" name="question10" onclick="getTotal()" type="radio" value="1" /> I’m quite brave.</label><br />
+                    <label><input form="doshaquiz" id="kapha10" name="question10" onclick="getTotal()" type="radio" value="1" /> I’m a loyal, faithful friend.</label></div>
+                    
+                    <div class="col-xs-12 col-md-6 b20">&nbsp;</div>
+                    </div>
+                    
+                    <div class="row">
+                    <div class="col-xs-12 col-md-6 b20"><strong>11. And these? Which sounds the most like you?</strong><br />
+                    <label><input form="doshaquiz" id="vata11" name="question11" onclick="getTotal()" type="radio" value="1" /> I’m often restless.</label><br />
+                    <label><input form="doshaquiz" id="pitta11" name="question11" onclick="getTotal()" type="radio" value="1" /> I can be irritable and impatient.</label><br />
+                    <label><input form="doshaquiz" id="kapha11" name="question11" onclick="getTotal()" type="radio" value="1" /> I’m a loyal, faithful friend.</label></div>
+                    </div>
+                    
+                    <p>The following questions relate to how you act/feel when you’re under stress.<br />
+                    When you’re under stress do you tend to…</p>
+                    
+                    <div class="row">
+                    <div class="col-xs-12 col-md-6 b20"><strong>12. Experience insomnia?</strong><br />
+                    <label><input form="doshaquiz" id="vata12" name="question12" onclick="getTotal()" type="radio" value="1" /> Yes</label><br />
+                    <label><input form="doshaquiz" id="" name="question12" onclick="getTotal()" type="radio" value="1" /> No</label><br />
+                    &nbsp;</div>
+                    
+                    <div class="col-xs-12 col-md-6 b20"><strong>13. Feel complacent?</strong><br />
+                    <label><input form="doshaquiz" id="kapha12" name="question13" onclick="getTotal()" type="radio" value="1" /> Yes</label><br />
+                    <label><input form="doshaquiz" id="" name="question13" onclick="getTotal()" type="radio" value="1" /> No</label><br />
+                    &nbsp;</div>
+                    </div>
+                    
+                    <div class="row">
+                    <div class="col-xs-12 col-md-6 b20"><strong>14. Develop rashes or hives?</strong><br />
+                    <label><input form="doshaquiz" id="pitta12" name="question14" onclick="getTotal()" type="radio" value="1" /> Yes</label><br />
+                    <label><input form="doshaquiz" id="" name="question14" onclick="getTotal()" type="radio" value="1" /> No</label><br />
+                    &nbsp;</div>
+                    
+                    <div class="col-xs-12 col-md-6 b20"><strong>15. Lose weight?</strong><br />
+                    <label><input form="doshaquiz" id="vata13" name="question15" onclick="getTotal()" type="radio" value="1" /> Yes</label><br />
+                    <label><input form="doshaquiz" id="" name="question15" onclick="getTotal()" type="radio" value="1" /> No</label><br />
+                    &nbsp;</div>
+                    </div>
+                    
+                    <div class="row">
+                    <div class="col-xs-12 col-md-6 b20"><strong>16. Experience constipation or excess gas?</strong><br />
+                    <label><input form="doshaquiz" id="vata14" name="question16" onclick="getTotal()" type="radio" value="1" /> Yes</label><br />
+                    <label><input form="doshaquiz" id="" name="question16" onclick="getTotal()" type="radio" value="1" /> No</label><br />
+                    &nbsp;</div>
+                    
+                    <div class="col-xs-12 col-md-6 b20"><strong>17. Overeat or lose your appetite?</strong><br />
+                    <label><input form="doshaquiz" id="kapha13" name="question17" onclick="getTotal()" type="radio" value="1" /> Yes</label><br />
+                    <label><input form="doshaquiz" id="" name="question17" onclick="getTotal()" type="radio" value="1" /> No</label><br />
+                    &nbsp;</div>
+                    </div>
+                    
+                    <div class="row">
+                    <div class="col-xs-12 col-md-6 b20"><strong>18. Drink alcohol to excess?</strong><br />
+                    <label><input form="doshaquiz" id="pitta13" name="question18" onclick="getTotal()" type="radio" value="1" /> Yes</label><br />
+                    <label><input form="doshaquiz" id="" name="question18" onclick="getTotal()" type="radio" value="1" /> No</label><br />
+                    &nbsp;</div>
+                    
+                    <div class="col-xs-12 col-md-6 b20"><strong>19. Feel lazy or inert?</strong><br />
+                    <label><input form="doshaquiz" id="kapha14" name="question19" onclick="getTotal()" type="radio" value="1" /> Yes</label><br />
+                    <label><input form="doshaquiz" id="" name="question19" onclick="getTotal()" type="radio" value="1" /> No</label><br />
+                    &nbsp;</div>
+                    </div>
+                    
+                    <div class="row">
+                    <div class="col-xs-12 col-md-6 b20"><strong>20. Easily lose your temper?</strong><br />
+                    <label><input form="doshaquiz" id="pitta14" name="question20" onclick="getTotal()" type="radio" value="1" /> Yes</label><br />
+                    <label><input form="doshaquiz" id="" name="question20" onclick="getTotal()" type="radio" value="1" /> No</label><br />
+                    &nbsp;</div>
+                    
+                    <div class="col-xs-12 col-md-6 b20"><strong>21. Retain water?</strong><br />
+                    <label><input form="doshaquiz" id="kapha15" name="question21" onclick="getTotal()" type="radio" value="1" /> Yes</label><br />
+                    <label><input form="doshaquiz" id="" name="question21" onclick="getTotal()" type="radio" value="1" /> No</label><br />
+                    &nbsp;</div>
+                    </div>
+                    
+                    <div class="row">
+                    <div class="col-xs-12 col-md-6 b20"><strong>22. Seek change?</strong><br />
+                    <label><input form="doshaquiz" id="vata15" name="question22" onclick="getTotal()" type="radio" value="1" /> Yes</label><br />
+                    <label><input form="doshaquiz" id="" name="question22" onclick="getTotal()" type="radio" value="1" /> No</label><br />
+                    &nbsp;</div>
+                    
+                    <div class="col-xs-12 col-md-6 b20"><strong>23. Sweat a lot or have excess body odor?</strong><br />
+                    <label><input form="doshaquiz" id="pitta15" name="question23" onclick="getTotal()" type="radio" value="1" /> Yes</label><br />
+                    <label><input form="doshaquiz" id="" name="question23" onclick="getTotal()" type="radio" value="1" /> No</label><br />
+                    &nbsp;</div>
+                    </div>
+                    
+                    <div class="row">
+                    <div class="col-xs-12 col-md-6 b20"><strong>24. Feel anxious or fearful? </strong><br />
+                    <label><input form="doshaquiz" id="vata16" name="question24" onclick="getTotal()" type="radio" value="1" /> Yes</label><br />
+                    <label><input form="doshaquiz" id="" name="question24" onclick="getTotal()" type="radio" value="1" /> No</label><br />
+                    &nbsp;</div>
+                    
+                    <div class="col-xs-12 col-md-6 b20"><strong>25. Eat hot, spicy foods?</strong><br />
+                    <label><input form="doshaquiz" id="pitta16" name="question25" onclick="getTotal()" type="radio" value="1" /> Yes</label><br />
+                    <label><input form="doshaquiz" id="" name="question25" onclick="getTotal()" type="radio" value="1" /> No</label><br />
+                    &nbsp;</div>
+                    </div>
+                    
+                    <div class="row">
+                    <div class="col-xs-12 col-md-6 b20"><strong>26. Experience gastritis or ulcers?</strong><br />
+                    <label><input form="doshaquiz" id="pitta17" name="question26" onclick="getTotal()" type="radio" value="1" /> Yes</label><br />
+                    <label><input form="doshaquiz" id="" name="question26" onclick="getTotal()" type="radio" value="1" /> No</label><br />
+                    &nbsp;</div>
+                    
+                    <div class="col-xs-12 col-md-6 b20"><strong>27. Feel restless?</strong><br />
+                    <label><input form="doshaquiz" id="vata17" name="question27" onclick="getTotal()" type="radio" value="1" /> Yes</label><br />
+                    <label><input form="doshaquiz" id="" name="question27" onclick="getTotal()" type="radio" value="1" /> No</label><br />
+                    &nbsp;</div>
+                    </div>
+                    
+                    <div class="row">
+                    <div class="col-xs-12 col-md-6 b20"><strong>28. Sleep a lot?</strong><br />
+                    <label><input form="doshaquiz" id="kapha16" name="question28" onclick="getTotal()" type="radio" value="1" /> Yes</label><br />
+                    <label><input form="doshaquiz" id="" name="question28" onclick="getTotal()" type="radio" value="1" /> No</label><br />
+                    &nbsp;</div>
+                    
+                    <div class="col-xs-12 col-md-6 b20"><strong>29. Put on weight?</strong><br />
+                    <label><input form="doshaquiz" id="kapha17" name="question29" onclick="getTotal()" type="radio" value="1" /> Yes</label><br />
+                    <label><input form="doshaquiz" id="" name="question29" onclick="getTotal()" type="radio" value="1" /> No</label><br />
+                    &nbsp;</div>
+                    </div>
+                    </form>
+                    
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td style="padding:5px">
+                                <div id="display-vata-total"><strong>Vata: 0</strong></div>
+                                <span><a class="arrow" href="/resources/tips-balancing-vata" style="font-size: 22px;">Read more about Vata</a></span></td>
+                                <td style="padding:5px">
+                                <div id="display-pitta-total"><strong>Pitta: 0</strong></div>
+                                <span><a class="arrow" href="/resources/dosha-notions-pitta-balance" style="font-size: 22px;">Read more about Pitta</a></span></td>
+                                <td style="padding:5px">
+                                <div id="display-kapha-total"><strong>Kapha: 0</strong></div>
+                                <span><a class="arrow" href="/resources/nine-yoga-poses-balance-your-kapha" style="font-size: 22px;">Read more about Kapha</a></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                <!--div class="act_questions">
+                    <div class="quest_info" id="quest1">
+                        <div class="ques_desc"><p>1. Which of these best describes your physical frame?</p></div>
+                        <div class="options">
+                            <input type="radio" value="" name="quest1" id="vata1">
+                            <label for="quest12">Small</label>
+                            <input type="radio" value="" name="quest1" id="pitta1">
+                            <label for="quest13">Medium</label>
+                            <input type="radio" value="" name="quest1" id="kapha1">
+                            <label for="quest14">Large</label>
+                        </div>
+                    </div>
+                    <div class="quest_info" id="quest2">
+                        <div class="ques_desc"><p>2. Which best describes your skin?</p></div>
+                        <div class="options">
+                            <input type="radio" value="" name="quest2" id="pitta2">
+                            <label for="quest15">Oily and soft with freckles or pimples</label>
+                            <input type="radio" value="" name="quest2" id="kapha2">
+                            <label for="quest16">Thick, oily, cool skin</label>
+                            <input type="radio" value="" name="quest2" id="vata2">
+                            <label for="quest17">Dry</label>
+                        </div>
+                    </div>
+                    <div class="quest_info" id="quest3">
+                        <div class="ques_desc"><p>3. Which best describes your hair?</p></div>
+                        <div class="options">
+                            <input type="radio" value="" name="quest3" id="pitta3">
+                            <label for="quest18">Small</label>
+                            <input type="radio" value="" name="quest3" id="kapha3">
+                            <label for="quest19">Medium</label>
+                            <input type="radio" value="" name="quest3" id="vata3">
+                            <label for="quest110">Large</label>
+                        </div>
+                    </div>
+                    <div class="quest_info" id="quest4">
+                        <div class="ques_desc"><p>4. Which best describes how you talk?</p></div>
+                        <div class="options">
+                            <input type="radio" value="" name="quest4" id="kapha4">
+                            <label for="quest111"> Fast and/or a lot!</label>
+                            <input type="radio" value="" name="quest4" id="vata4">
+                            <label for="quest112">My words are sharp and concise</label>
+                            <input type="radio" value="" name="quest4" id="pitta4">
+                            <label for="quest113">My speech is slow and calm</label>
+                        </div>
+                    </div>
+                    <div class="quest_info" id="quest5">
+                        <div class="ques_desc"><p>5. What type of weather is your favorite?</p></div>
+                        <div class="options">
+                            <input type="radio" value="" name="quest5" id="vata5">
+                            <label for="quest114">Warm</label>
+                            <input type="radio" value="" name="quest5" id="pitta5">
+                            <label for="quest115">Cool</label>
+                            <input type="radio" value="" name="quest5" id="kapha5">
+                            <label for="quest116">Cool and Dry</label>
+                        </div>
+                    </div>
+                    <div class="quest_info" id="quest6">
+                        <div class="ques_desc"><p>6. How is your memory?</p></div>
+                        <div class="options">
+                            <input type="radio" value="" name="quest6" id="vata6">
+                            <label for="quest117">I learn quickly, but I also forget quickly.</label>
+                            <input type="radio" value="" name="quest6" id="kapha6">
+                            <label for="quest118"> I have a great memory!</label>
+                            <input type="radio" value="" name="quest6" id="pitta6">
+                            <label for="quest119"> It takes me a while to commit something to memory, but once I do I don’t forget it.</label>
+                        </div>
+                    </div>
+                    <div class="quest_info" id="quest7">
+                        <div class="ques_desc"><p>7.  Which best describes your personality?</p></div>
+                        <div class="options">
+                            <input type="radio" value="" name="quest7" id="vata7">
+                            <label for="quest120">Responsible, nurturing, and sensitive</label>
+                            <input type="radio" value="" name="quest7" id="pitta7">
+                            <label for="quest121">Creative, joyful, and introspective</label>
+                            <input type="radio" value="" name="quest7" id="kapha7">
+                            <label for="quest122">Competitive, perceptive, and efficient</label>
+                        </div>
+                    </div>
+                    <div class="quest_info" id="quest8">
+                        <div class="ques_desc"><p>8. Which of these traits do you most identify with?</p></div>
+                        <div class="options">
+                            <input type="radio" value="" name="quest8" id="kapha8">
+                            <label for="quest123">I can be pretty stubborn</label>
+                            <input type="radio" value="" name="quest8" id="vata8">
+                            <label for="quest124">I get jealous easily.</label>
+                            <input type="radio" value="" name="quest8" id="pitta8">
+                            <label for="quest125">I’m often indecisive.</label>
+                        </div>
+                    </div>
+                    <div class="quest_info" id="quest9">
+                        <div class="ques_desc"><p>9. How about these traits? Which sounds the most like you?</p></div>
+                        <div class="options">
+                            <input type="radio" value="" name="quest9" id="kapha9">
+                            <label for="quest126"> I’m very intuitive.</label>
+                            <input type="radio" value="" name="quest9" id="vata9">
+                            <label for="quest127"> I’m quite brave.</label>
+                            <input type="radio" value="" name="quest9" id="pitta9">
+                            <label for="quest128">I’m a loyal, faithful friend.</label>
+                        </div>
+                    </div>
+                    <div class="quest_info" id="quest10">
+                        <div class="ques_desc"><p>10. And these? Which sounds the most like you?</p></div>
+                        <div class="options">
+                            <input type="radio" value="" name="quest10" id="vata10">
+                            <label for="quest129"> I’m often restless.</label>
+                            <input type="radio" value="" name="quest10" id="pitta10">
+                            <label for="quest130"> I can be irritable and impatient.</label>
+                            <input type="radio" value="" name="quest10" id="kapha10">
+                            <label for="quest131">I’m a loyal, faithful friend.</label>
+                        </div>
+                    </div>
+                    <div class="quest_info" id="quest11">
+                        <div class="ques_desc"><p>11. Experience insomnia?</p></div>
+                        <div class="options">
+                            <input type="radio" value="" name="quest11" id="quest132">
+                            <label for="quest132">Yes</label>
+                            <input type="radio" value="" name="quest11" id="quest133">
+                            <label for="quest133">No</label>
+                        </div>
+                    </div>
+                    <div class="quest_info" id="quest12">
+                        <div class="ques_desc"><p>12. Feel complacent?</p></div>
+                        <div class="options">
+                            <input type="radio" value="" name="quest11" id="quest134">
+                            <label for="quest134">Yes</label>
+                            <input type="radio" value="" name="quest11" id="quest135">
+                            <label for="quest135">No</label>
+                        </div>
+                    </div>
+                    <div class="quest_info" id="quest13">
+                        <div class="ques_desc"><p>13.  Develop rashes or hives?</p></div>
+                        <div class="options">
+                            <input type="radio" value="" name="quest11" id="quest136">
+                            <label for="quest136">Yes</label>
+                            <input type="radio" value="" name="quest11" id="quest137">
+                            <label for="quest137">No</label>
+                        </div>
+                    </div>
+                    <div class="quest_info" id="quest14">
+                        <div class="ques_desc"><p>14. Lose weight?</p></div>
+                        <div class="options">
+                            <input type="radio" value="" name="quest11" id="quest138">
+                            <label for="quest138">Yes</label>
+                            <input type="radio" value="" name="quest11" id="quest139">
+                            <label for="quest139">No</label>
+                        </div>
+                    </div>
+                    <div class="quest_info" id="quest15">
+                        <div class="ques_desc"><p>15. Experience constipation or excess gas?</p></div>
+                        <div class="options">
+                            <input type="radio" value="" name="quest11" id="quest140">
+                            <label for="quest140">Yes</label>
+                            <input type="radio" value="" name="quest11" id="quest141">
+                            <label for="quest141">No</label>
+                        </div>
+                    </div>
+                </div-->
+            </div>
+        </div>
+    </div>
+    <script>
+        
+  function getTotal()
+  {
+         var kaphaSum= 0;
+         var pittaSum= 0;
+         var vataSum= 0;
+         for (var i=1;i<=17;i++) {
+             var kaphaItem = document.getElementById('kapha'+i);
+             if(kaphaItem.checked)
+             {
+              if (isNaN(+kaphaItem.value)) { kaphaSum = 'N/A'; }
+              else { kaphaSum+= +kaphaItem.value; }
+             }
+         }
+         for (var i=1;i<=17;i++) {
+             var pittaItem = document.getElementById('pitta'+i);
+             if(pittaItem.checked)
+             {
+              if (isNaN(+pittaItem.value)) { pittaSum = 'N/A'; }
+              else { pittaSum+= +pittaItem.value; }
+             }
+         }
+         for (var i=1;i<=17;i++) {
+             var vataItem = document.getElementById('vata'+i);
+             if(vataItem.checked)
+             {
+              if (isNaN(+vataItem.value)) { vataSum = 'N/A'; }
+              else { vataSum+= +vataItem.value; }
+             }
+         }
+         document.getElementById('display-kapha-total').innerHTML = '<strong>Kapha: ' + kaphaSum + '</strong>';
+         document.getElementById('display-pitta-total').innerHTML = '<strong>Pitta: ' + pittaSum + '</strong>';
+         document.getElementById('display-vata-total').innerHTML = '<strong>Vata: ' + vataSum + '</strong>';
+    }      
+
+    </script>
+</body>
+</html>

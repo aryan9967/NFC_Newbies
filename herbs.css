@@ -5,9 +5,63 @@
   width: 100%;
   height: 100%;
 }
+.search_in{
+  background-color: white;
+  height: 17vh;
+  border-bottom: 1px solid rgb(200, 200, 200);
+  box-shadow: 0px 3px 15px 5px rgb(220, 220, 220);
+}
+.search_in .srch_cont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7vh;
+  width: 100%;
+}
+.search_in .search{
+  /* border: 2px solid rgb(200, 200, 200); */
+  width: 35%;
+  height: 80%;
+  display: flex;
+  border-radius: 3px;
+}
+.search input{
+  width: 90%;
+  height: 100%;
+  padding-left: 2%;
+  outline: none;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  border: 2px solid rgb(210, 210, 210);
+}
+.card1 .topic h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 250;
+  font-size: 6vh;
+}
+.search button{
+  background-color:  rgb(68, 173, 68);
+  color: white;
+  height: 100%;
+  width: 10%;
+  border: none;
+  outline: none;
+  border-radius: 0 3px 3px 0;
+
+}
+.search button:hover{
+  background-color:  rgb(58, 150, 58);
+}
+.search button:active{
+  background-color:  rgb(49, 128, 49);
+}
+.top{
+  box-shadow: none;
+}
+
 .mainscreen{
   background-image: url(herbsbg.jpg);
-  height: 89vh;
+  height: 83vh;
   overflow: auto;
   image-resolution:cover;
   
@@ -36,24 +90,24 @@ height: 100%;
   justify-content: space-evenly;
 
 }
-#box1{
+.box1{
   width: 400px;
   height: 900px;
   background-color:  rgb(224, 242, 224);
  
   border: 10px black;
-  border-radius: 5%;
+  border-radius: 5px;
   border-style: dotted black;
   align-items: center;
 
 
 }
-#box2{
+.box2{
   width: 400px;
   height: 900px;
   background-color: rgb(249, 231, 209);
   border: 10px black;
-  border-radius: 5%;
+  border-radius: 5px;
   border-style: dotted black;
   align-items: center;
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +9,35 @@
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="remedies.css">
 </head>
+
 <body>
-    <div class="top">
-        <div class="name_logo">
-            <div class="logo"></div>
+    <div class="search_in">
+        <div class="top">
+            <div class="name_logo">
+                <div class="logo"></div>
+    
+            </div>
+            
+            <div class="navigation">
+                <a href="homepage.html">Home</a>
+                <a href="remedies.html">Remedies</a>
+                <a href="herbs.html">Herbs</a>
+                <a href="">Healthy Practices</a>
+                <a href="about.html">About</a>
+            </div>
             
         </div>
-        <div class="navigation">
-            <a href="homepage.html">Home</a>
-            <a href="remedies.html">Remedies</a>
-            <a href="herbs.html">Herbs</a>
-            <a href="healthy_practices.html">Healthy Practices</a>
-            <a href="about.html">About</a>
+        <div class="srch_cont">
+            <div class="search">
+                <input id="rem-inp" type="text" placeholder="Search Diseases...">
+                <button class="serach_btn" onclick="rem_search()"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
         </div>
+        
     </div>
-        <div class="card1 odd">
+   
+    <div id="block" class="mainscreen">
+        <div class="card1" id="card15">
             <div class="imagebox">
                 <img src="images/AYURVED4.jpg" alt="diabetes" class="right">
             </div>
@@ -53,7 +68,7 @@
                 </ul>
             </div>
         </div>
-        <div class="card1 even">
+        <div class="card1 " id="card16">
             <div class="imagebox">
                 <img src="images/wallpaper.jpg" alt="diabetes" class="right">
             </div>
@@ -77,34 +92,8 @@
                             Avoid spicy, acidic, and fried foods, as well as overeating.</p></li>
                 </ul>
             </div>
-            </div>
-        <div class="card1 odd">
-            <div class="imagebox">
-                <img src="images/consti.jpg" alt="diabetes" class="right">
-            </div>
-            <div class="topic"><h1>Constipation</h1></div>
-            <p class="info">
-                Constipation (Vibandha):
-Constipation is a condition where bowel movements become infrequent and difficult.
-                </p>
-           
-            <div class="remedies">
-                <ul class="li_remedies">
-                    <li><h2>Lemon Water:</h2>
-                        <p> 
-                            Drink a glass of warm water with a squeeze of lemon in the morning to stimulate bowel movements.
-                           </p>
-                       </li>
-                    <li><h2>Fibre Rich Foods</h2>
-                        <p>
-                            Include fiber-rich foods like fruits, vegetables, and whole grains in your diet.</p></li>
-                    <li><h2> Abdominal Massage</h2>
-                        <p>
-                            Practice abdominal massage in a clockwise direction to aid digestion.</p></li>
-                </ul>
-            </div>
         </div>
-        <div class="card1 even">
+        <div class="card1 " id="card17">
             <div class="imagebox">
                 <img src="images/image4.png" alt="diabetes" class="right">
             </div>
@@ -129,372 +118,678 @@ Constipation is a condition where bowel movements become infrequent and difficul
                 </ul>
             </div>
         </div>
-        <div class="card1 odd">
+        <div class="card1" id="card18">
             <div class="imagebox">
-                <img src="images/haldi1.jpg" alt="diabetes" class="right">
+                <img src="images/consti.jpg" alt="diabetes" class="right">
             </div>
-            <div class="topic"><h1>Diabetes</h1></div>
-            <p class="info">Ayurveda offers a holistic approach to managing diabetes by focusing on diet, lifestyle, and herbal remedies to balance the body's systems. </p>
-           
+            <div class="topic">
+                <h1>Constipation</h1>
+            </div>
+            <p class="info">
+                Constipation (Vibandha):
+                Constipation is a condition where bowel movements become infrequent and difficult.
+            </p>
+    
             <div class="remedies">
                 <ul class="li_remedies">
-                    <li><h2>Gymnema Sylvestre (Gurmar):</h2>
-                        <p> Gymnema is often called the "sugar destroyer" in Ayurveda. It may help reduce sugar cravings and support blood sugar control.</p>
-                       </li>
-                    <li><h2>Triphla</h2>
+                    <li>
+                        <h2>Lemon Water:</h2>
                         <p>
-                          Triphala, a combination of three fruits, helps improve digestion and may indirectly support blood sugar control by enhancing nutrient absorption.</p></li>
-                    <li><h2>Bitter Gourd</h2>
+                            Drink a glass of warm water with a squeeze of lemon in the morning to stimulate bowel movements.
+                        </p>
+                    </li>
+                    <li>
+                        <h2>Fibre Rich Foods</h2>
                         <p>
-                            Bitter gourd is known for its blood sugar-lowering properties. You can consume it as a vegetable or drink its juice.</p></li>
-                    <li><h2>Neem</h2>
+                            Include fiber-rich foods like fruits, vegetables, and whole grains in your diet.</p>
+                    </li>
+                    <li>
+                        <h2> Abdominal Massage</h2>
                         <p>
-                            Neem leaves are known for their blood-purifying properties. You can consume neem leaves in the form of capsules or drink neem tea.</p></li>
+                            Practice abdominal massage in a clockwise direction to aid digestion.</p>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="card1">
+        <div id="card1" class="card1">
+            <div class="imagebox">
+                <img src="images/AYURVED4.jpg" alt="diabetes" class="right">
+            </div>
+            <div class="topic">
+                <h1>Diabetes</h1>
+            </div>
+            <p class="info">Ayurveda offers a holistic approach to managing diabetes by focusing on diet, lifestyle, and
+                herbal remedies to balance the body's systems. </p>
+
+            <div class="remedies">
+                <ul class="li_remedies">
+                    <li>
+                        <h2>Gymnema Sylvestre (Gurmar):</h2>
+                        <p> Gymnema is often called the "sugar destroyer" in Ayurveda. It may help reduce sugar cravings
+                            and support blood sugar control.</p>
+                    </li>
+                    <li>
+                        <h2>Triphla</h2>
+                        <p>
+                            Triphala, a combination of three fruits, helps improve digestion and may indirectly support
+                            blood sugar control by enhancing nutrient absorption.</p>
+                    </li>
+                    <li>
+                        <h2>Bitter Gourd</h2>
+                        <p>
+                            Bitter gourd is known for its blood sugar-lowering properties. You can consume it as a
+                            vegetable or drink its juice.</p>
+                    </li>
+                    <li>
+                        <h2>Neem</h2>
+                        <p>
+                            Neem leaves are known for their blood-purifying properties. You can consume neem leaves in
+                            the form of capsules or drink neem tea.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="card2" class="card1">
             <div class="imagebox">
                 <img src="images/AYURVED5.jpg" alt="cancer" class="right">
             </div>
-            <div class="topic"><h1>Cancer</h1></div>
-            <p class="info"> Ayurveda can be used as a complementary approach to support individuals undergoing cancer treatment and help manage symptoms and side effects. </p>
+            <div class="topic">
+                <h1>Cancer</h1>
+            </div>
+            <p class="info"> Ayurveda can be used as a complementary approach to support individuals undergoing cancer
+                treatment and help manage symptoms and side effects. </p>
             <div class="remedies">
                 <ul class="li_remedies">
-                    <li><h2>Ashwagandha </h2>
-                        <p> Ashwagandha is an adaptogenic herb known for its immune-boosting and stress-reducing properties. </p>
-                       </li>
-                    <li><h2>Turmeric </h2>
+                    <li>
+                        <h2>Ashwagandha </h2>
+                        <p> Ashwagandha is an adaptogenic herb known for its immune-boosting and stress-reducing
+                            properties. </p>
+                    </li>
+                    <li>
+                        <h2>Turmeric </h2>
                         <p>
-                            Curcumin, the active compound in turmeric, has anti-inflammatory and antioxidant properties. </p></li>
-                    <li><h2>Tulsi </h2>
+                            Curcumin, the active compound in turmeric, has anti-inflammatory and antioxidant properties.
+                        </p>
+                    </li>
+                    <li>
+                        <h2>Tulsi </h2>
                         <p>
-                            Tulsi is known for its immune-enhancing and stress-reducing properties. It may help improve immunity and provide emotional support.</p></li>
-                    <li><h2>Triphala</h2>
+                            Tulsi is known for its immune-enhancing and stress-reducing properties. It may help improve
+                            immunity and provide emotional support.</p>
+                    </li>
+                    <li>
+                        <h2>Triphala</h2>
                         <p>
-                            Triphala, a combination of three fruits, can help support digestion and detoxification, which may be beneficial during cancer treatment.</p></li>
+                            Triphala, a combination of three fruits, can help support digestion and detoxification,
+                            which may be beneficial during cancer treatment.</p>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="card1">
+        <div id="card3" class="card1">
             <div class="imagebox">
                 <img src="images/AYURVED6.jpg" alt="cancer" class="right">
             </div>
-            <div class="topic"><h1>Arthritis</h1></div>
-            <p class="info"> Ayurveda offers a range of remedies and holistic approaches to managing arthritis, a condition characterized by inflammation and pain in the joints. These remedies focus on reducing inflammation, improving joint mobility, and providing relief from pain.</p>
+            <div class="topic">
+                <h1>Arthritis</h1>
+            </div>
+            <p class="info"> Ayurveda offers a range of remedies and holistic approaches to managing arthritis, a
+                condition characterized by inflammation and pain in the joints. These remedies focus on reducing
+                inflammation, improving joint mobility, and providing relief from pain.</p>
             <div class="remedies">
                 <ul class="li_remedies">
-                    <li><h2>Ayurvedic oils</h2>
-                        <p> Ayurvedic oils like Mahanarayan oil and Dhanwantharam oil are often used for joint massage. Massaging affected joints with these oils can help improve blood circulation, reduce inflammation, and alleviate pain. </p>
-                       </li>
-                    <li><h2>Ginger</h2>
+                    <li>
+                        <h2>Ayurvedic oils</h2>
+                        <p> Ayurvedic oils like Mahanarayan oil and Dhanwantharam oil are often used for joint massage.
+                            Massaging affected joints with these oils can help improve blood circulation, reduce
+                            inflammation, and alleviate pain. </p>
+                    </li>
+                    <li>
+                        <h2>Ginger</h2>
                         <p>
-                            Ginger can reduce joint pain and stiffness. It can be consumed in the form of ginger tea or added to meals. </p></li>
-                    <li><h2>Turmeric</h2>
+                            Ginger can reduce joint pain and stiffness. It can be consumed in the form of ginger tea or
+                            added to meals. </p>
+                    </li>
+                    <li>
+                        <h2>Turmeric</h2>
                         <p>
-                            Turmeric can help reduce inflammation, support insulin sensitivity, and potentially improve menstrual regularity.</p></li>
-                    <li><h2>Guggul</h2>
+                            Turmeric can help reduce inflammation, support insulin sensitivity, and potentially improve
+                            menstrual regularity.</p>
+                    </li>
+                    <li>
+                        <h2>Guggul</h2>
                         <p>
-                            Guggul can reduce inflammation and relieve joint pain. It is available in various forms, including capsules and powders.</p></li>
+                            Guggul can reduce inflammation and relieve joint pain. It is available in various forms,
+                            including capsules and powders.</p>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="card1">
+        <div id="card4" class="card1">
             <div class="imagebox">
                 <img src="images/AYURVED7.jpg" alt="cancer" class="right">
             </div>
-            <div class="topic"><h1>PCOS</h1></div>
-            <p class="info"> Ayurveda offers a holistic approach to managing PCOS by addressing the underlying imbalances in the body.</p>
+            <div class="topic">
+                <h1>PCOS</h1>
+            </div>
+            <p class="info"> Ayurveda offers a holistic approach to managing PCOS by addressing the underlying
+                imbalances in the body.</p>
             <div class="remedies">
                 <ul class="li_remedies">
-                    <li><h2>Shatavari</h2>
-                        <p> Shatavari can help regulate menstrual cycles, reduce ovarian cysts, and balance hormones. It has a nourishing effect on the reproductive system, making it particularly useful for women with PCOS. </p>
-                       </li>
-                    <li><h2>Fenugreek</h2>
+                    <li>
+                        <h2>Shatavari</h2>
+                        <p> Shatavari can help regulate menstrual cycles, reduce ovarian cysts, and balance hormones. It
+                            has a nourishing effect on the reproductive system, making it particularly useful for women
+                            with PCOS. </p>
+                    </li>
+                    <li>
+                        <h2>Fenugreek</h2>
                         <p>
-                            Fenugreek seeds are rich in soluble fiber and phytoestrogens. They may help regulate blood sugar levels and improve insulin sensitivity, which is often a concern in PCOS.  </p></li>
-                    <li><h2>Turmeric</h2>
+                            Fenugreek seeds are rich in soluble fiber and phytoestrogens. They may help regulate blood
+                            sugar levels and improve insulin sensitivity, which is often a concern in PCOS. </p>
+                    </li>
+                    <li>
+                        <h2>Turmeric</h2>
                         <p>
-                            Turmeric can help reduce inflammation, support insulin sensitivity, and potentially improve menstrual regularity.</p></li>
-                    <li><h2>Chandraprabha Vati</h2>
+                            Turmeric can help reduce inflammation, support insulin sensitivity, and potentially improve
+                            menstrual regularity.</p>
+                    </li>
+                    <li>
+                        <h2>Chandraprabha Vati</h2>
                         <p>
-                            Chandraprabha Vati is an Ayurvedic herbal formulation that contains various herbs and minerals. It may be used to support urinary and reproductive health in women with PCOS.</p></li>
+                            Chandraprabha Vati is an Ayurvedic herbal formulation that contains various herbs and
+                            minerals. It may be used to support urinary and reproductive health in women with PCOS.</p>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="card1">
+        <div id="card5" class="card1">
             <div class="imagebox">
                 <img src="images/asthama.jpg" alt="cancer" class="right">
             </div>
-            <div class="topic"><h1>Asthama</h1></div>
-            <p class="info"> Asthma is a chronic respiratory condition characterized by inflammation and narrowing of the airways, leading to symptoms like wheezing, shortness of breath, and coughing. Ayurveda offers a holistic approach to managing asthma by addressing underlying imbalances and reducing inflammation.</p>
+            <div class="topic">
+                <h1>Asthama</h1>
+            </div>
+            <p class="info"> Asthma is a chronic respiratory condition characterized by inflammation and narrowing of
+                the airways, leading to symptoms like wheezing, shortness of breath, and coughing. Ayurveda offers a
+                holistic approach to managing asthma by addressing underlying imbalances and reducing inflammation.</p>
             <div class="remedies">
                 <ul class="li_remedies">
-                    <li><h2>Pranayam</h2>
-                        <p> Pranayama, such as Anulom Vilom (alternate nostril breathing) and Bhramari (humming bee breath), can improve lung capacity and enhance overall respiratory health.
+                    <li>
+                        <h2>Pranayam</h2>
+                        <p> Pranayama, such as Anulom Vilom (alternate nostril breathing) and Bhramari (humming bee
+                            breath), can improve lung capacity and enhance overall respiratory health.
                         </p>
-                       </li>
-                    <li><h2>Vasa</h2>
+                    </li>
+                    <li>
+                        <h2>Vasa</h2>
                         <p>
-                            Vasa known for its bronchodilator and anti-inflammatory properties, vasa can help relieve congestion and improve breathing.  </p></li>
-                    <li><h2>Licorice</h2>
+                            Vasa known for its bronchodilator and anti-inflammatory properties, vasa can help relieve
+                            congestion and improve breathing. </p>
+                    </li>
+                    <li>
+                        <h2>Licorice</h2>
                         <p>
-                             Licorice has anti-inflammatory and soothing effects on the respiratory system. It may help reduce inflammation in the airways.</p></li>
-                    <li><h2>Trikatu</h2>
+                            Licorice has anti-inflammatory and soothing effects on the respiratory system. It may help
+                            reduce inflammation in the airways.</p>
+                    </li>
+                    <li>
+                        <h2>Trikatu</h2>
                         <p>
-                            Trikatu (a blend of ginger, black pepper, and long pepper): Trikatu can enhance lung function and reduce congestion.</p></li>
+                            Trikatu (a blend of ginger, black pepper, and long pepper): Trikatu can enhance lung
+                            function and reduce congestion.</p>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="card1">
+        <div id="card6" class="card1">
             <div class="imagebox">
                 <img src="images/Migraine.jpg" alt="cancer" class="right">
             </div>
-            <div class="topic"><h1>Migraines and Headaches </h1></div>
-            <p class="info"> Ayurveda, an ancient system of medicine from India, offers holistic approaches to managing various health conditions, including migraines. It focuses on balancing the body, mind, and spirit to promote overall well-being. </p>
+            <div class="topic">
+                <h1>Migraines and Headaches </h1>
+            </div>
+            <p class="info"> Ayurveda, an ancient system of medicine from India, offers holistic approaches to managing
+                various health conditions, including migraines. It focuses on balancing the body, mind, and spirit to
+                promote overall well-being. </p>
             <div class="remedies">
                 <ul class="li_remedies">
-                    <li><h2>Butterbur</h2>
-                        <p> Butterbur (Petasites hybridus): Butterbur is an herb that has been used in Ayurvedic medicine to relieve headaches. It should be used under the guidance of an Ayurvedic practitioner.
+                    <li>
+                        <h2>Butterbur</h2>
+                        <p> Butterbur (Petasites hybridus): Butterbur is an herb that has been used in Ayurvedic
+                            medicine to relieve headaches. It should be used under the guidance of an Ayurvedic
+                            practitioner.
                         </p>
-                       </li>
-                    <li><h2>Ginger</h2>
+                    </li>
+                    <li>
+                        <h2>Ginger</h2>
                         <p>
-                            Ginger (Zingiber officinale): Ginger may help reduce the frequency and severity of migraines. You can consume it in various forms, such as ginger tea or as a supplement. </p></li>
-                    <li><h2>Shirodhara</h2>
+                            Ginger (Zingiber officinale): Ginger may help reduce the frequency and severity of
+                            migraines. You can consume it in various forms, such as ginger tea or as a supplement. </p>
+                    </li>
+                    <li>
+                        <h2>Shirodhara</h2>
                         <p>
-                            Shirodhara is an Ayurvedic therapy that involves pouring warm oil continuously over the forehead. It can help calm the nervous system and reduce migraine symptoms.
-                            </p></li>
-                    <li><h2>Nasya</h2>
+                            Shirodhara is an Ayurvedic therapy that involves pouring warm oil continuously over the
+                            forehead. It can help calm the nervous system and reduce migraine symptoms.
+                        </p>
+                    </li>
+                    <li>
+                        <h2>Nasya</h2>
                         <p>
-                            Nasya involves the administration of herbal oils or powders into the nasal passages. It may be beneficial for some individuals with migraines.</p></li>
+                            Nasya involves the administration of herbal oils or powders into the nasal passages. It may
+                            be beneficial for some individuals with migraines.</p>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="card1">
+        <div id="card7" class="card1">
             <div class="imagebox">
                 <img src="images/sleep.jpg" alt="cancer" class="right">
             </div>
-            <div class="topic"><h1>Sleep Disorders </h1></div>
-            <p class="info"> Ayurveda, the traditional system of medicine from India, offers a holistic approach to managing sleep disorders. It believes that imbalances in the body's doshas (Vata, Pitta, and Kapha), along with lifestyle and dietary factors, can contribute to sleep problems. Here are some Ayurvedic solutions for addressing sleep disorders: </p>
+            <div class="topic">
+                <h1>Sleep Disorders </h1>
+            </div>
+            <p class="info"> Ayurveda, the traditional system of medicine from India, offers a holistic approach to
+                managing sleep disorders. It believes that imbalances in the body's doshas (Vata, Pitta, and Kapha),
+                along with lifestyle and dietary factors, can contribute to sleep problems. Here are some Ayurvedic
+                solutions for addressing sleep disorders: </p>
             <div class="remedies">
                 <ul class="li_remedies">
-                    <li><h2>Abhyanga</h2>
-                        <p> Abhyanga (Self-Massage): Massaging warm sesame oil or coconut oil on the body, especially the feet and head, can help relax the nervous system and promote better sleep.
+                    <li>
+                        <h2>Abhyanga</h2>
+                        <p> Abhyanga (Self-Massage): Massaging warm sesame oil or coconut oil on the body, especially
+                            the feet and head, can help relax the nervous system and promote better sleep.
                         </p>
-                       </li>
-                    <li><h2>Panchakarma</h2>
+                    </li>
+                    <li>
+                        <h2>Panchakarma</h2>
                         <p>
-                             In severe cases or chronic sleep disorders, Ayurvedic detoxification treatments like Panchakarma may be recommended to balance the doshas and improve overall health. </p></li>
-                    <li><h2> Brahmi</h2>
+                            In severe cases or chronic sleep disorders, Ayurvedic detoxification treatments like
+                            Panchakarma may be recommended to balance the doshas and improve overall health. </p>
+                    </li>
+                    <li>
+                        <h2> Brahmi</h2>
                         <p>
                             Enhances mental clarity and can help reduce anxiety and insomnia.
-                            </p></li>
-                    <li><h2>Jatamansi</h2>
+                        </p>
+                    </li>
+                    <li>
+                        <h2>Jatamansi</h2>
                         <p>
-                             Aids in calming the mind and promoting restful sleep.</p></li>
+                            Aids in calming the mind and promoting restful sleep.</p>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="card1">
+        <div id="card8" class="card1">
             <div class="imagebox">
                 <img src="images/multani.jpg" alt="cancer" class="right">
             </div>
-            <div class="topic"><h1>Acne </h1></div>
-            <p class="info"> Ayurveda, the traditional system of medicine from India, offers a holistic approach to treating acne that focuses on balancing the body's internal energies and addressing the root causes of the condition. </p>
+            <div class="topic">
+                <h1>Acne </h1>
+            </div>
+            <p class="info"> Ayurveda, the traditional system of medicine from India, offers a holistic approach to
+                treating acne that focuses on balancing the body's internal energies and addressing the root causes of
+                the condition. </p>
             <div class="remedies">
                 <ul class="li_remedies">
-                    <li><h2>Multani Mitti</h2>
-                        <p> Multani Mitti (Fuller's Earth) mixed with rosewater or aloe vera gel can be applied as a face pack to absorb excess oil and cleanse the skin.
+                    <li>
+                        <h2>Multani Mitti</h2>
+                        <p> Multani Mitti (Fuller's Earth) mixed with rosewater or aloe vera gel can be applied as a
+                            face pack to absorb excess oil and cleanse the skin.
                         </p>
-                       </li>
-                    <li><h2> Aromatherapy</h2>
+                    </li>
+                    <li>
+                        <h2> Aromatherapy</h2>
                         <p>
-                            Essential oils like tea tree oil and lavender oil have antibacterial properties and can be diluted with a carrier oil (such as coconut oil) and applied topically. </p></li>
-                    <li><h2> Neem </h2>
+                            Essential oils like tea tree oil and lavender oil have antibacterial properties and can be
+                            diluted with a carrier oil (such as coconut oil) and applied topically. </p>
+                    </li>
+                    <li>
+                        <h2> Neem </h2>
                         <p>
-                            Neem (Azadirachta indica) is a powerful herb known for its anti-inflammatory and antibacterial properties. It can be taken internally as capsules or applied topically in the form of neem oil or paste.
-                            </p></li>
-                    <li><h2>Turmeric</h2>
+                            Neem (Azadirachta indica) is a powerful herb known for its anti-inflammatory and
+                            antibacterial properties. It can be taken internally as capsules or applied topically in the
+                            form of neem oil or paste.
+                        </p>
+                    </li>
+                    <li>
+                        <h2>Turmeric</h2>
                         <p>
-                            Turmeric (Curcuma longa) has anti-inflammatory and antimicrobial properties. You can consume turmeric in food or take it as a supplement.</p></li>
+                            Turmeric (Curcuma longa) has anti-inflammatory and antimicrobial properties. You can consume
+                            turmeric in food or take it as a supplement.</p>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="card1">
+        <div id="card9" class="card1">
             <div class="imagebox">
                 <img src="images/panchakama.jpg" alt="cancer" class="right">
             </div>
-            <div class="topic"><h1>Kidney Stones </h1></div>
-            <p class="info"> Ayurveda, the traditional system of medicine from India, offers a holistic approach to treating acne that focuses on balancing the body's internal energies and addressing the root causes of the condition. </p>
+            <div class="topic">
+                <h1>Kidney Stones </h1>
+            </div>
+            <p class="info"> Ayurveda, the traditional system of medicine from India, offers a holistic approach to
+                treating acne that focuses on balancing the body's internal energies and addressing the root causes of
+                the condition. </p>
             <div class="remedies">
                 <ul class="li_remedies">
-                    <li><h2>Trikatu Churna:</h2>
-                        <p> This is a combination of three herbs (ginger, black pepper, and long pepper) known for their digestive and detoxifying properties. It may help in reducing the risk of kidney stone formation
+                    <li>
+                        <h2>Trikatu Churna:</h2>
+                        <p> This is a combination of three herbs (ginger, black pepper, and long pepper) known for their
+                            digestive and detoxifying properties. It may help in reducing the risk of kidney stone
+                            formation
                         </p>
-                       </li>
-                    <li><h2> Pashanabheda</h2>
+                    </li>
+                    <li>
+                        <h2> Pashanabheda</h2>
                         <p>
-                            This herb is commonly used in Ayurveda to treat kidney stones. It is believed to dissolve stones and relieve pain. </p></li>
-                    <li><h2> Gokshura (Tribulus terrestris) </h2>
+                            This herb is commonly used in Ayurveda to treat kidney stones. It is believed to dissolve
+                            stones and relieve pain. </p>
+                    </li>
+                    <li>
+                        <h2> Gokshura (Tribulus terrestris) </h2>
                         <p>
-                            Gokshura is known for its diuretic properties and may help in preventing the formation of kidney stones.
-                            </p></li>
-                    <li><h2>Panchakarma </h2>
+                            Gokshura is known for its diuretic properties and may help in preventing the formation of
+                            kidney stones.
+                        </p>
+                    </li>
+                    <li>
+                        <h2>Panchakarma </h2>
                         <p>
-                            Some Ayurvedic clinics offer Panchakarma treatments, which involve a series of cleansing and detoxification procedures. These treatments aim to balance the doshas and improve overall health.
-                        </p></li>
+                            Some Ayurvedic clinics offer Panchakarma treatments, which involve a series of cleansing and
+                            detoxification procedures. These treatments aim to balance the doshas and improve overall
+                            health.
+                        </p>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="card1">
+        <div id="card10" class="card1">
             <div class="imagebox">
                 <img src="images/Ayurved.jpg" alt="cancer" class="right">
             </div>
-            <div class="topic"><h1>Heart Disorders </h1></div>
-            <p class="info"> Ayurveda, the traditional system of medicine from India, offers a holistic approach to treating acne that focuses on balancing the body's internal energies and addressing the root causes of the condition. </p>
+            <div class="topic">
+                <h1>Heart Disorders </h1>
+            </div>
+            <p class="info"> Ayurveda, the traditional system of medicine from India, offers a holistic approach to
+                treating acne that focuses on balancing the body's internal energies and addressing the root causes of
+                the condition. </p>
             <div class="remedies">
                 <ul class="li_remedies">
-                    <li><h2>Arjuna:</h2>
-                        <p> This herb is known for its heart-strengthening properties. It is available in various forms, including capsules and powder.
+                    <li>
+                        <h2>Arjuna:</h2>
+                        <p> This herb is known for its heart-strengthening properties. It is available in various forms,
+                            including capsules and powder.
 
                         </p>
-                       </li>
-                    <li><h2>  Ashwagandha:</h2>
+                    </li>
+                    <li>
+                        <h2> Ashwagandha:</h2>
                         <p>
-                            An adaptogenic herb, ashwagandha may help reduce stress, which can benefit heart health. </p></li>
-                    <li><h2> Guggul: </h2>
+                            An adaptogenic herb, ashwagandha may help reduce stress, which can benefit heart health.
+                        </p>
+                    </li>
+                    <li>
+                        <h2> Guggul: </h2>
                         <p>
                             Guggul resin is used to lower cholesterol levels and support overall heart health.
-                            </p></li>
-                    <li><h2> Hawthorn: </h2>
+                        </p>
+                    </li>
+                    <li>
+                        <h2> Hawthorn: </h2>
                         <p>
-                            Although not traditionally Ayurvedic, hawthorn is used in some Ayurvedic formulations for heart health.
-                        </p></li>
+                            Although not traditionally Ayurvedic, hawthorn is used in some Ayurvedic formulations for
+                            heart health.
+                        </p>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="card1">
+        <div id="card11" class="card1">
             <div class="imagebox">
                 <img src="images/AYURVEDA3.jpg" alt="cancer" class="right">
             </div>
-            <div class="topic"><h1>Digestive Disorders</h1></div>
-            <p class="info"> Ayurveda, a traditional system of medicine from India, offers a holistic approach to treating digestive disorders. It focuses on balancing the body's doshas (Vata, Pitta, and Kapha) and addressing the root causes of digestive issues. </p>
+            <div class="topic">
+                <h1>Digestive Disorders</h1>
+            </div>
+            <p class="info"> Ayurveda, a traditional system of medicine from India, offers a holistic approach to
+                treating digestive disorders. It focuses on balancing the body's doshas (Vata, Pitta, and Kapha) and
+                addressing the root causes of digestive issues. </p>
             <div class="remedies">
                 <ul class="li_remedies">
-                    <li><h2>Yoga and Pranayama:</h2>
-                        <p> 
-                            Practicing yoga asanas, such as Pavanamuktasana (wind-relieving pose) and Bhujangasana (cobra pose), can aid digestion.
+                    <li>
+                        <h2>Yoga and Pranayama:</h2>
+                        <p>
+                            Practicing yoga asanas, such as Pavanamuktasana (wind-relieving pose) and Bhujangasana
+                            (cobra pose), can aid digestion.
                             Deep breathing exercises like Kapalabhati and Anulom Vilom can also be beneficial.
                         </p>
-                       </li>
-                    <li><h2>Herbal Teas</h2>
+                    </li>
+                    <li>
+                        <h2>Herbal Teas</h2>
                         <p>
-                            Ginger (Ardra), fennel (Saunf), and cumin (Jeera) can be used to make herbal teas to aid digestion.</p></li>
-                    <li><h2>Triphala</h2>
+                            Ginger (Ardra), fennel (Saunf), and cumin (Jeera) can be used to make herbal teas to aid
+                            digestion.</p>
+                    </li>
+                    <li>
+                        <h2>Triphala</h2>
                         <p>
                             Triphala, a combination of three fruits, is a popular Ayurvedic remedy for constipation.
-                            </p></li>
-                    <li><h2>Aloe vera </h2>
+                        </p>
+                    </li>
+                    <li>
+                        <h2>Aloe vera </h2>
                         <p>
                             Aloe vera and licorice root can help soothe inflammation in the digestive tract.
-                        </p></li>
+                        </p>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="card1">
+        <div id="card12" class="card1">
             <div class="imagebox">
                 <img src="images/AYURVED2.jpg" alt="cancer" class="right">
             </div>
-            <div class="topic"><h1>Tuberculsosis</h1></div>
-            <p class="info"> While Ayurveda can be complementary to modern medicine, it is important to note that tuberculosis (TB) is a serious bacterial infection, and the primary treatment for TB should be conventional medical therapy prescribed by a qualified healthcare professional.  </p>
+            <div class="topic">
+                <h1>Tuberculsosis</h1>
+            </div>
+            <p class="info"> While Ayurveda can be complementary to modern medicine, it is important to note that
+                tuberculosis (TB) is a serious bacterial infection, and the primary treatment for TB should be
+                conventional medical therapy prescribed by a qualified healthcare professional. </p>
             <div class="remedies">
                 <ul class="li_remedies">
-                    <li><h2>Herbal Remedies:</h2>
+                    <li>
+                        <h2>Herbal Remedies:</h2>
                         <p>
-Get plenty of rest and sleep to support the body's healing process.
-Practice stress-reduction techniques such as yoga, meditation, and deep breathing exercises to boost overall immunity.
-Avoid exposure to cold and damp environments, as these can aggravate respiratory symptoms.
+                            Get plenty of rest and sleep to support the body's healing process.
+                            Practice stress-reduction techniques such as yoga, meditation, and deep breathing exercises
+                            to boost overall immunity.
+                            Avoid exposure to cold and damp environments, as these can aggravate respiratory symptoms.
                         </p>
-                       </li>
-                    <li><h2>Lifestyle Recommendations:</h2>
+                    </li>
+                    <li>
+                        <h2>Lifestyle Recommendations:</h2>
                         <p>
-                            Consult an Ayurvedic practitioner for personalized herbal formulations based on your constitution (dosha).
-Some Ayurvedic herbs that may be beneficial include tulsi (holy basil), neem, ashwagandha, and guduchi. These herbs have immune-boosting properties.</p></li>
-                    <li><h2>Ayurvedic Therapies:</h2>
+                            Consult an Ayurvedic practitioner for personalized herbal formulations based on your
+                            constitution (dosha).
+                            Some Ayurvedic herbs that may be beneficial include tulsi (holy basil), neem, ashwagandha,
+                            and guduchi. These herbs have immune-boosting properties.</p>
+                    </li>
+                    <li>
+                        <h2>Ayurvedic Therapies:</h2>
                         <p>
-Panchakarma: Consult an Ayurvedic practitioner for Panchakarma therapies, which may help detoxify the body and improve immunity.
-                            </p></li>
-                    <li><h2>Personalized Ayurvedic Consultation: </h2>
+                            Panchakarma: Consult an Ayurvedic practitioner for Panchakarma therapies, which may help
+                            detoxify the body and improve immunity.
+                        </p>
+                    </li>
+                    <li>
+                        <h2>Personalized Ayurvedic Consultation: </h2>
                         <p>
-It's crucial to consult with a qualified Ayurvedic practitioner who can assess your individual constitution and recommend a tailored approach to your TB treatment. They can prescribe specific herbs, therapies, and dietary guidelines based on your unique needs.
-                        </p></li>
+                            It's crucial to consult with a qualified Ayurvedic practitioner who can assess your
+                            individual constitution and recommend a tailored approach to your TB treatment. They can
+                            prescribe specific herbs, therapies, and dietary guidelines based on your unique needs.
+                        </p>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="card1">
+        <div id="card13" class="card1">
             <div class="imagebox">
                 <img src="images/stress.jpg" alt="cancer" class="right">
             </div>
-            <div class="topic"><h1>Stress And Anxiety</h1></div>
-            <p class="info"> Ayurveda, a traditional system of medicine from India, offers a holistic approach to treating digestive disorders. It focuses on balancing the body's doshas (Vata, Pitta, and Kapha) and addressing the root causes of stress issues. </p>
+            <div class="topic">
+                <h1>Stress And Anxiety</h1>
+            </div>
+            <p class="info"> Ayurveda, a traditional system of medicine from India, offers a holistic approach to
+                treating digestive disorders. It focuses on balancing the body's doshas (Vata, Pitta, and Kapha) and
+                addressing the root causes of stress issues. </p>
             <div class="remedies">
                 <ul class="li_remedies">
-                    <li><h2>Yoga and Meditation:</h2>
-                        <p> 
-                            Regular practice of yoga asanas (postures) and pranayama (breathing exercises) can help calm the mind and reduce stress.
+                    <li>
+                        <h2>Yoga and Meditation:</h2>
+                        <p>
+                            Regular practice of yoga asanas (postures) and pranayama (breathing exercises) can help calm
+                            the mind and reduce stress.
                             Meditation, particularly mindfulness meditation, is highly beneficial for managing anxiety.
                         </p>
-                       </li>
-                    <li><h2>Ashwagandha</h2>
+                    </li>
+                    <li>
+                        <h2>Ashwagandha</h2>
                         <p>
                             Ashwagandha: An adaptogenic herb that helps the body adapt to stress.
 
-</p></li>
-                    <li><h2>brahmi and Jatamansi</h2>
+                        </p>
+                    </li>
+                    <li>
+                        <h2>brahmi and Jatamansi</h2>
                         <p>
                             Brahmi: Supports cognitive function and can help calm the mind.
                             Jatamansi: Useful for reducing anxiety and promoting relaxation.
-                            </p></li>
-                    <li><h2>Aloe vera </h2>
+                        </p>
+                    </li>
+                    <li>
+                        <h2>Aloe vera </h2>
                         <p>
                             Shankhpushpi: Known for its calming and soothing properties.
                             Tulsi (Holy Basil): Acts as an adaptogen and can reduce stress.
-                        </p></li>
+                        </p>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="card1">
+        <div id="card14" class="card1">
             <div class="imagebox">
                 <img src="images/yoga.jpg" alt="cancer" class="right">
             </div>
-            <div class="topic"><h1>Neurological Disorders: </h1></div>
-            <p class="info"> Ayurveda, an ancient system of medicine from India, offers holistic approaches to various health conditions, including neurological disorders. It's important to note that Ayurvedic treatments should be used in conjunction with conventional medical care for neurological disorders. Always consult with a qualified Ayurvedic practitioner and your healthcare provider before starting any new treatment regimen. </p>
+            <div class="topic">
+                <h1>Neurological Disorders: </h1>
+            </div>
+            <p class="info"> Ayurveda, an ancient system of medicine from India, offers holistic approaches to various
+                health conditions, including neurological disorders. It's important to note that Ayurvedic treatments
+                should be used in conjunction with conventional medical care for neurological disorders. Always consult
+                with a qualified Ayurvedic practitioner and your healthcare provider before starting any new treatment
+                regimen. </p>
             <div class="remedies">
                 <ul class="li_remedies">
-                    <li><h2>Balancing Doshas:</h2>
-                        <p> 
-                             Ayurveda believes that imbalances in the three doshas (Vata, Pitta, and Kapha) can lead to neurological problems. The treatment approach typically involves identifying the dominant dosha causing the imbalance and using dietary, lifestyle, and herbal remedies to restore balance.
+                    <li>
+                        <h2>Balancing Doshas:</h2>
+                        <p>
+                            Ayurveda believes that imbalances in the three doshas (Vata, Pitta, and Kapha) can lead to
+                            neurological problems. The treatment approach typically involves identifying the dominant
+                            dosha causing the imbalance and using dietary, lifestyle, and herbal remedies to restore
+                            balance.
                         </p>
-                       </li>
-                    <li><h2> Herbal Remedies:</h2>
+                    </li>
+                    <li>
+                        <h2> Herbal Remedies:</h2>
                         <p>
-                            Brahmi (Bacopa monnieri): Known for its cognitive-enhancing properties, Brahmi is often used to support brain function and memory.
-                            Ashwagandha (Withania somnifera): This adaptogenic herb can help reduce stress and anxiety, which may be beneficial for certain neurological conditions.
-                           </p></li>
-                    <li><h2>Dietary Modifications: </h2>
+                            Brahmi (Bacopa monnieri): Known for its cognitive-enhancing properties, Brahmi is often used
+                            to support brain function and memory.
+                            Ashwagandha (Withania somnifera): This adaptogenic herb can help reduce stress and anxiety,
+                            which may be beneficial for certain neurological conditions.
+                        </p>
+                    </li>
+                    <li>
+                        <h2>Dietary Modifications: </h2>
                         <p>
-                            Ayurveda emphasizes the importance of a balanced diet that aligns with your dosha constitution. In general, a diet rich in fresh fruits, vegetables, whole grains, and spices like turmeric and ginger can support neurological health.
-                            </p></li>
-                    <li><h2>Abhyanga (Oil Massage):  </h2>
+                            Ayurveda emphasizes the importance of a balanced diet that aligns with your dosha
+                            constitution. In general, a diet rich in fresh fruits, vegetables, whole grains, and spices
+                            like turmeric and ginger can support neurological health.
+                        </p>
+                    </li>
+                    <li>
+                        <h2>Abhyanga (Oil Massage): </h2>
                         <p>
-                            Regular oil massages, especially with warm sesame oil, can help calm the nervous system and improve circulation
-                        </p></li>
+                            Regular oil massages, especially with warm sesame oil, can help calm the nervous system and
+                            improve circulation
+                        </p>
+                    </li>
                 </ul>
             </div>
         </div>
+        <div class="footer" id="footer">
+            <div class="socials">
+                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-square-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+            <div class="contact">
+                <div class="number">Contact Us: +91 80086 78906</div>
+                <div class="email">Email: ayurveda@gmail.com</div>
+            </div>
+        </div>
+    </div>
 
-   
-    
+    <script>
+        var block = document.getElementById('block');
+        var srch = document.getElementById('rem-inp');
+        var ft= document.getElementById('footer')
+        var arr = ['diabetes', 'cancer', 'arthritis', 'pcos', 'asthama', 'migraines and headaches', 'sleep disorders', 'acne', 'kidney stones', 'heart disorders', 'digestive disorders', 'tuberculsosis', 'stress and anxiety', 'neurological disorders','common cold', 'acid reflux', 'headache', 'constipation']
+        function rem_search() {
+            for (var x in arr) {
+                var y = Number(x) + 1
+                var id = 'card' + y;
+                console.log(id);
+                var card = document.getElementById(id);
+                console.log(card);
+                if (arr[x] == srch.value.toLowerCase()) {
+                    console.log('success');
+                    card.style.display = 'flow-root';
+                    ft.style.display='none';
+                    var status = true;
+                }
+                else if (srch.value == '' || srch.value == null) {
+                    card.style.display = 'flow-root';
+                    status = true;
+                    ft.style.display='flex';
+
+                }
+                else {
+                    card.style.display = 'none';
+                }
+            }
+
+            if (status != true) {
+                for (var x in arr) {
+                    var y = Number(x) + 1
+                    var id = 'card' + y;
+                    console.log(id);
+                    var card = document.getElementById(id);
+                    card.style.display = 'flow-root';
+                }
+                alert('No results found');
+            }
+        }
+        srch.addEventListener('keydown', (e) => {
+            if (e.key == 'Enter') {
+                rem_search();
+            }
+        })
+    </script>
+
 </body>
+
 </html>
