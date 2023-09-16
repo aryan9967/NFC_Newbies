@@ -3,7 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: sans-serif;
-	/* background:linear-gradient(135deg,rgb(229, 237, 229) 10% , rgb(197, 254, 197) 100%) */
+	
 }
 
 body {
@@ -13,12 +13,14 @@ body {
 
 .about-section {
 	padding: 50px;
-	text-align: center;
+	text-align:left;
 }
 
 .title {
 	color: rgb(0, 0, 0);
 	font-size: 33px;
+	margin: 10px;
+	text-align: left;
 }
 
 .button {
@@ -26,7 +28,7 @@ body {
 	outline: 0;
 	display: inline-block;
 	padding: 8px;
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 	background-color: #000;
 	text-align: center;
 	cursor: pointer;
@@ -62,6 +64,40 @@ body {
 	background-color: #fff;
 
 }
+.footer{
+    background-color: rgb(68, 173, 68);
+    height: 8vh;
+    width: 100%;
+    padding: 0% 2%;
+    display: flex;
+    justify-content: space-between;
+}
+.socials{
+    width: 50%;
+    /* border: 1px solid black; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.socials a{
+    text-decoration: none;
+    color: rgb(232, 232, 232);
+    margin-right: 1.5%;
+}
+.contact{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contact .number, .contact .email{
+    font-size: 2.2vh;
+    color: rgb(232, 232, 232) ;
+}
 
 
 .container {
@@ -89,7 +125,7 @@ body {
 .card {
 	background-color: white;
 	border-radius: 6px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 4px 6px rgba(8, 8, 8, 0.5);
 	overflow: hidden;
 	transition: transform 0.2s, box-shadow 0.2s;
 	width: 18rem;
@@ -104,7 +140,7 @@ body {
 
 .card-img {
 	width: 18rem;
-	height: 12rem;
+	height: 19rem;
 }
 
 .card-img img {
@@ -194,11 +230,29 @@ footer {
 
 .mainscreen {
 	background-image: url("image1.jpg");
-
 	height: 100%;
 	background-position: center;
 	background-repeat: repeat-y;
-	/* background-size: cover; */
 	
-
+	
+	
+}
+.mainscreen::-webkit-scrollbar {
+    display: none;
+}
+.overflow{
+	/* background-image: url("image1.jpg");
+	height: 100%;
+	background-position: center;
+	background-repeat: repeat-y;
+	overflow:initial; */
+	
+}
+#para{
+	font-size: 20px;
+	margin: 10px;
+}
+.aboutus{
+	display: flex;
+	justify-content: space-evenly;
 }
